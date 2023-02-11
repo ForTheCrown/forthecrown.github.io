@@ -1,0 +1,155 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>For The Crown – Interactables</title>
+    <link>/docs/interactables/</link>
+    <description>Recent content in Interactables on For The Crown</description>
+    <generator>Hugo -- gohugo.io</generator>
+    
+	  <atom:link href="/docs/interactables/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Docs: Usage</title>
+      <link>/docs/interactables/setup/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/interactables/setup/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Interactables or Usables are blocks/entities/triggers that have special conditions and actions attached to them.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;Usables are made of 2 parts, checks and actions. Checks are run to test if
+a player is able to use the object, if all tests are passed, then the actions
+will be run.&lt;/p&gt;
+&lt;p&gt;Usable objects also have a &lt;code&gt;silent&lt;/code&gt; value, this determines if usable objects show
+failure messages when a player fails a check.&lt;/p&gt;
+&lt;h2 id=&#34;commands-a-nameusables_commandsa&#34;&gt;Commands &lt;a name=&#34;usables_commands&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;All usables commands will be prefixed with some arguments, for example:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usable entity @e[distance=..2,limit=1] tests remove 0
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;|----------------- Prefix ------------------|
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;Usages:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-yml&#34; data-lang=&#34;yml&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000&#34;&gt;${Prefix}&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Lists all actions/checks&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;${Prefix} add &amp;lt;type: usage_type&amp;gt; [&amp;lt;input&amp;gt;]&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Adds a check/action of a &amp;lt;type&amp;gt; to the object &amp;lt;input&amp;gt; is optional, &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# depending on the &amp;lt;type&amp;gt; used. For example, &amp;#39;one_use&amp;#39; check takes no &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# input,  while &amp;#39;has_permission&amp;#39; check requires a permission name &lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# as input.&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;${Prefix} clear&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Clears all checks/actions on an object&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;${Prefix} remove &amp;lt;index: number(1..)&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Removes a check/action at an &amp;lt;index&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;${Prefix} remove -between &amp;lt;first index&amp;gt; &amp;lt;last index&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Removes all actions/checks between the first and second index&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;${Prefix} remove -with_type &amp;lt;type&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;&lt;/span&gt;&lt;span style=&#34;color:#8f5902;font-style:italic&#34;&gt;# Removes all actions/checks with the matching &amp;lt;type&amp;gt;&lt;/span&gt;&lt;span style=&#34;color:#f8f8f8;text-decoration:underline&#34;&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;p&gt;See &lt;a href=&#34;https://github.com/ForTheCrown/FTC/wiki/Commands#interactable-&#34;&gt;&lt;code&gt;/usable&lt;/code&gt; usages&lt;/a&gt; for more info&lt;/p&gt;
+&lt;h2 id=&#34;triggers-a-nameusables_triggersa&#34;&gt;Triggers &lt;a name=&#34;usables_triggers&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Triggers are areas that when entered/exited execute the use tests and actions
+they have been assigned.&lt;/p&gt;
+&lt;p&gt;To create area triggers, create an area selection with a WorldEdit wand and then
+use &lt;code&gt;/usable triggers -create &amp;lt;name&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;Triggers have a set &lt;code&gt;type&lt;/code&gt; which determines if actions are ran when a player
+enters or exits or moves while inside the trigger. The type can be changed with
+&lt;code&gt;/usable triggers &amp;lt;trigger name&amp;gt; type &amp;lt;exit|enter|either|move&amp;gt;&lt;/code&gt;.&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;exit&lt;/code&gt; and &lt;code&gt;enter&lt;/code&gt; types are self-explanatory, &lt;code&gt;either&lt;/code&gt; is run either when a
+player enters or exits the trigger and &lt;code&gt;move&lt;/code&gt; is run anytime the player moves
+while inside the trigger.&lt;/p&gt;
+&lt;h2 id=&#34;blocks-a-nameusables_blocksa&#34;&gt;Blocks &lt;a name=&#34;usables_blocks&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Simply a block with usable data attached to it. Note: Blocks must be Tile
+Entities to be used as usables.&lt;/p&gt;
+&lt;p&gt;Usable blocks are accessed with &lt;code&gt;/usable block &amp;lt;pos: x,y,z&amp;gt;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;Blocks share a value with Usable Entities, that is the &lt;code&gt;cancelVanilla&lt;/code&gt; value,
+this determines if vanilla interaction is canceled when using a usable entity,
+for example, if a usable chest block is interacted with, then if &lt;code&gt;cancelVanilla = true&lt;/code&gt;,
+the player won&amp;rsquo;t open the chest after the checks and actions have been ran&lt;/p&gt;
+&lt;h2 id=&#34;entities-a-nameusables_entitiesa&#34;&gt;Entities &lt;a name=&#34;usables_entities&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Simply an entity with usable data attached to it.&lt;/p&gt;
+&lt;p&gt;Usable entities are accessed with &lt;code&gt;/usable entity &amp;lt;selector&amp;gt;&lt;/code&gt;&lt;/p&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Docs: Scripting</title>
+      <link>/docs/interactables/scripting/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/docs/interactables/scripting/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;Interactables or Usables are blocks/entities/triggers that have special conditions and actions attached to them.&lt;/p&gt;
+
+&lt;/div&gt;
+
+&lt;p&gt;There are differences in the functions that usables scripts should implement,
+they operate with some commonalities.&lt;/p&gt;
+&lt;p&gt;Usables scripts will have the following bindings:&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;code&gt;_holder&lt;/code&gt;: The holder of the action/test, may be a &lt;code&gt;Kit&lt;/code&gt;, &lt;code&gt;Warp&lt;/code&gt;, &lt;code&gt;UsableBlock&lt;/code&gt;, &lt;code&gt;UsableEntity&lt;/code&gt; or &lt;code&gt;UsableTrigger&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_entity&lt;/code&gt;: The entity this action/check belongs to, if the action/check is not held by an entity, this will be &lt;code&gt;undefined&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_block&lt;/code&gt;: The block that this action/check belongs to, if this doesn&amp;rsquo;t belong to a block, this will be &lt;code&gt;undefined&lt;/code&gt;.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_location&lt;/code&gt;: If either &lt;code&gt;_block&lt;/code&gt; or &lt;code&gt;_entity&lt;/code&gt; is defined, this will be set to their location.&lt;/li&gt;
+&lt;li&gt;&lt;code&gt;_bounds&lt;/code&gt;: If this action/check belongs to a &lt;code&gt;UsableTrigger&lt;/code&gt;, this will be set to the trigger&amp;rsquo;s bounds, else, &lt;code&gt;undefined&lt;/code&gt;&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;The script systems provides 2 methods to allow for persistent objects.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;getDataObject()&lt;/code&gt; to get a native JavaScript object/array/primitive, will
+be null, if the script has no persistent data already saved.&lt;/p&gt;
+&lt;p&gt;Use &lt;code&gt;setDataObject(object)&lt;/code&gt; to set the persistent data of the script, this must
+be a primitive or a native JavaScript object/array that will be saved to JSON.&lt;/p&gt;
+&lt;h2 id=&#34;parsing-a-namescripts_parsinga&#34;&gt;Parsing &lt;a name=&#34;scripts_parsing&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Script types accept the following input:
+&lt;code&gt;&amp;lt;script name&amp;gt; [&amp;lt;args: string[]&amp;gt;]&lt;/code&gt;, with &lt;code&gt;&amp;lt;args&amp;gt;&lt;/code&gt; being a comma-separated list
+of argument supplied to the script.&lt;/p&gt;
+&lt;p&gt;For example, a command to add a &lt;code&gt;run_script&lt;/code&gt; action a script would look like so:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-txt&#34; data-lang=&#34;txt&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;/usable triggers &amp;lt;name&amp;gt; actions add run_script &amp;lt;script name&amp;gt; [&amp;lt;args&amp;gt;]
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;action-scripts-a-namescripts_actionsa&#34;&gt;Action Scripts &lt;a name=&#34;scripts_actions&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;Action scripts only need to implement a single method: &lt;code&gt;onUse(user)&lt;/code&gt;, where
+the &lt;code&gt;user&lt;/code&gt; is a &lt;code&gt;net.forthecrown.user.User&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;Example of implementation:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onUse&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;sendMessage&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;Component&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;Hello :D&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)));&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;&lt;h2 id=&#34;test-scripts-a-namescripts_testsa&#34;&gt;Test Scripts &lt;a name=&#34;scripts_tests&#34;&gt;&lt;/a&gt;&lt;/h2&gt;
+&lt;p&gt;The main method a test script needs to implement is &lt;code&gt;test(user)&lt;/code&gt;. This method
+must return a &lt;code&gt;true&lt;/code&gt; or &lt;code&gt;false&lt;/code&gt; value.&lt;br&gt;
+Test scripts can optionally implement 2 more functions, &lt;code&gt;onTestsPassed(user)&lt;/code&gt;
+and &lt;code&gt;getFailMessage(user)&lt;/code&gt;;&lt;/p&gt;
+&lt;p&gt;Example of implementation:&lt;/p&gt;
+&lt;div class=&#34;highlight&#34;&gt;&lt;pre tabindex=&#34;0&#34; style=&#34;background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;&#34;&gt;&lt;code class=&#34;language-js&#34; data-lang=&#34;js&#34;&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;test&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;getGuild&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;()&lt;/span&gt; &lt;span style=&#34;color:#ce5c00;font-weight:bold&#34;&gt;!=&lt;/span&gt; &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;null&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;;&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;onTestsPassed&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#000&#34;&gt;logger&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;info&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;User {} passed all tests&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;,&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;function&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;getFailMessage&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;user&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;)&lt;/span&gt; &lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;{&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;  &lt;span style=&#34;color:#204a87;font-weight:bold&#34;&gt;return&lt;/span&gt; &lt;span style=&#34;color:#000&#34;&gt;Component&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;.&lt;/span&gt;&lt;span style=&#34;color:#000&#34;&gt;text&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;(&lt;/span&gt;&lt;span style=&#34;color:#4e9a06&#34;&gt;&amp;#34;You must be in a guild to use this&amp;#34;&lt;/span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;);&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;span style=&#34;display:flex;&#34;&gt;&lt;span&gt;&lt;span style=&#34;color:#000;font-weight:bold&#34;&gt;}&lt;/span&gt;
+&lt;/span&gt;&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+  </channel>
+</rss>

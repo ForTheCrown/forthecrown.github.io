@@ -27,11 +27,11 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/scripts/listener/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-02-11T13:50:26+01:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-19T13:00:59+02:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Listening to Events">
 <meta itemprop="description" content="Everything related to events listeners in scripts.
 ">
-<meta itemprop="dateModified" content="2023-02-11T13:50:26+01:00" />
+<meta itemprop="dateModified" content="2023-03-19T13:00:59+02:00" />
 <meta itemprop="wordCount" content="159">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Listening to Events"/>
@@ -244,10 +244,10 @@
 <p>The following are various examples of how the events object can be used</p>
 <h3 id="simple-event-registration">Simple event registration</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Declare the Java type
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">PlayerJoinEvent</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Java</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;org.bukkit.event.player.PlayerJoinEvent&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#4e9a06">&#34;@bukkit.event.player.PlayerJoinEvent&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Register a function to list to the given event
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">events</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">register</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;onPlayerJoin&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">PlayerJoinEvent</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">events</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">register</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PlayerJoinEvent</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">onPlayerJoin</span><span style="color:#000;font-weight:bold">);</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Function called when event is triggered
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">function</span> <span style="color:#000">onPlayerJoin</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">event</span><span style="color:#000;font-weight:bold">)</span> <span style="color:#000;font-weight:bold">{</span>
@@ -255,22 +255,22 @@
 </span></span><span style="display:flex;"><span><span style="color:#000;font-weight:bold">}</span>
 </span></span></code></pre></div><h3 id="prioritized-listener-registration">Prioritized listener registration</h3>
 <p>Please see <a href="https://bukkit.fandom.com/wiki/Event_API_Reference#:~:text=false-,Event%20Priorities,-There%20are%20six">The Bukkit Wiki</a> for information about EventPriority.</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">EventPrio</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Java</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;org.bukkit.event.EventPriority&#34;</span><span style="color:#000;font-weight:bold">);</span>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">as</span> <span style="color:#000">EventPrio</span> <span style="color:#000">from</span> <span style="color:#4e9a06">&#34;@bukkit.event.EventPriority&#34;</span>
 </span></span><span style="display:flex;"><span>
 </span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Register a function to list to the given event with the LOWEST
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// priority
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">events</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">register</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;onPlayerJoin&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">PlayerJoinEvent</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">EventPrio</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">LOWEST</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">events</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">register</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PlayerJoinEvent</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">onPlayerJoin</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">EventPrio</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">LOWEST</span><span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div><h3 id="ignoring-cancelled-events">Ignoring cancelled events</h3>
 <p>This section is very similar to the past one, with simply one extra parameter</p>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// The final parameter states whether events that have been cancelled by
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// other listeners that were executed before this listener, should be ignored.
 </span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// If true, cancelled events won&#39;t call the given function, if false, they will
-</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">events</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">register</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;onPlayerJoin&#34;</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">PlayerJoinEvent</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">EventPrio</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">LOWEST</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">events</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">register</span><span style="color:#000;font-weight:bold">(</span><span style="color:#000">PlayerJoinEvent</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">onPlayerJoin</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#000">EventPrio</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">LOWEST</span><span style="color:#000;font-weight:bold">,</span> <span style="color:#204a87;font-weight:bold">true</span><span style="color:#000;font-weight:bold">);</span>
 </span></span></code></pre></div>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified February 11, 2023: <a href="https://github.com/ForTheCrown/Website/commit/5f8f8c1b5212b9f5c6c85d8faf09c616e2967f34">Initial commit (5f8f8c1)</a>
+  Last modified March 19, 2023: <a href="https://github.com/ForTheCrown/Website/commit/6653707b4810844bc96d2b19540d56c18915a274">Update listener.md (6653707)</a>
 </div>
 
 </div>

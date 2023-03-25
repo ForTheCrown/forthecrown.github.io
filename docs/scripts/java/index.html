@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/docs/scripts/java/" /><meta property="article:section" content="docs" />
 
-<meta property="article:modified_time" content="2023-02-11T13:50:26+01:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-19T13:18:47+02:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Java Interopability">
 <meta itemprop="description" content="Everything related to java.
 ">
-<meta itemprop="dateModified" content="2023-02-11T13:50:26+01:00" />
-<meta itemprop="wordCount" content="365">
+<meta itemprop="dateModified" content="2023-03-19T13:18:47+02:00" />
+<meta itemprop="wordCount" content="499">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Java Interopability"/>
 <meta name="twitter:description" content="Everything related to java.
@@ -155,6 +155,17 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
+    <li><a href="#importing-java-classes">Importing java classes</a>
+      <ul>
+        <li><a href="#import-placeholders">Import placeholders</a></li>
+      </ul>
+    </li>
+    <li><a href="#importing-other-scripts">Importing other scripts</a>
+      <ul>
+        <li></li>
+        <li><a href="#behind-the-scenes">Behind the scenes</a></li>
+      </ul>
+    </li>
     <li><a href="#built-in">Built in</a>
       <ul>
         <li></li>
@@ -238,22 +249,46 @@
 
 </div>
 
-<p>The JavaScript engine used by FTC (Nashorn) is completely compatible
-with Java.</p>
-<p>To this end, you can import java classes like almost just like you would
-in regular Java, for example, to import the <a href="https://github.com/ForTheCrown/FTC/blob/main/src/main/java/net/forthecrown/utils/Time.java">Time utility class</a>, you can use the following:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#4e9a06">&#34;@ftc.utils.Time&#34;</span><span style="color:#000;font-weight:bold">;</span>
-</span></span></code></pre></div><p>The <code>@ftc</code> is an &lsquo;import placeholder&rsquo;, basically used to make import
-statements shorter and less of a hassel to write. All import
-placeholders are defined in <a href="https://github.com/ForTheCrown/FTC/blob/main/src/main/resources/scripts/import_placeholders.toml"><code>import_placeholders.toml</code></a></p>
-<p>If you&rsquo;re encountering issues with the above shown method, you can
-fallback to Nashorn&rsquo;s actual method of importing classes:</p>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">const</span> <span style="color:#000">Time</span> <span style="color:#ce5c00;font-weight:bold">=</span> <span style="color:#000">Java</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">type</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;net.forthecrown.utils.Time&#34;</span><span style="color:#000;font-weight:bold">);</span>
-</span></span></code></pre></div><p>FYI, the method of using the &lsquo;import&rsquo; keyword, is just remapped to the second method
-by a preprocessor, thus, in effect, the 2 above methods are essentially the same</p>
-<p>Please also be aware that the Nashorn engine, is not 100% up to ECMAscript 6 standards,
-there are many missing features. Be careful when using newer JavaScript features such as
-classes, as they do not exist within the engine.</p>
+<p>This means you can import java classes, instantiate them, or use their static
+methods like you would normally in Java.</p>
+<h2 id="importing-java-classes">Importing java classes</h2>
+<p>In this example, we&rsquo;ll import the <code>java.lang.System</code> class to print something
+to the console:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#4e9a06">&#34;java.lang.System&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">System</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">println</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello, world!&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><p>We can also give an alias to our imports like so:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">as</span> <span style="color:#000">AliasedSystem</span> <span style="color:#000">from</span> <span style="color:#4e9a06">&#34;java.lang.System&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">AliasedSystem</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">println</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello, aliased world!&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h3 id="import-placeholders">Import placeholders</h3>
+<p>Import placeholders are a little tool to make writing import statements less of
+a hassel. All placeholders are defined in <a href="https://github.com/ForTheCrown/FTC/blob/main/src/main/resources/scripts/import_placeholders.toml"><code>import_placeholders.toml</code></a>.</p>
+<p>As an example, we&rsquo;ll import the same java system class, but with imports</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#4e9a06">&#34;@jlang.System&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">System</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">out</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">println</span><span style="color:#000;font-weight:bold">(</span><span style="color:#4e9a06">&#34;Hello, placeholder-ed world!&#34;</span><span style="color:#000;font-weight:bold">);</span>
+</span></span></code></pre></div><h2 id="importing-other-scripts">Importing other scripts</h2>
+<p>While Nashsorn does not support CommonJS modules&hellip; or modules at all, FTC&rsquo;s
+scripts do allow for you to import other scripts using the following technique:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Imports and compiles the script
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#4e9a06">&#34;path/to/script.js&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic">// Evaluates the script&#39;s global scope
+</span></span></span><span style="display:flex;"><span><span style="color:#8f5902;font-style:italic"></span><span style="color:#000">script</span><span style="color:#000;font-weight:bold">();</span> 
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">script</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">a_method</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div><p>The same aliased import statement also works for these imports:</p>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-js" data-lang="js"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">import</span> <span style="color:#ce5c00;font-weight:bold">*</span> <span style="color:#000">as</span> <span style="color:#000">aliasedScript</span> <span style="color:#000">from</span> <span style="color:#4e9a06">&#34;script/path.js&#34;</span><span style="color:#000;font-weight:bold">;</span>
+</span></span><span style="display:flex;"><span><span style="color:#000">aliasedScript</span><span style="color:#000;font-weight:bold">()</span>
+</span></span><span style="display:flex;"><span>
+</span></span><span style="display:flex;"><span><span style="color:#000">aliasedScript</span><span style="color:#000;font-weight:bold">.</span><span style="color:#000">method</span><span style="color:#000;font-weight:bold">();</span>
+</span></span></code></pre></div><p><strong>Note</strong>: These import statements are very limited, you cannot import specific
+methods from individual scripts like with <code>import { m_1, m_2 } from &quot;foo/bar.js&quot;</code>.</p>
+<h6 id="praying-that-some-day-java-will-have-javascript-engine-that-isnt-9-years-behind">Praying that some day Java will have JavaScript engine that isn&rsquo;t 9 years behind</h6>
+<h3 id="behind-the-scenes">Behind the scenes</h3>
+<p>Behind the scenes, both of the above-shown imports are ran through a JS Preprocessor that translates those import statements to JS code. For example, the following import <code>import &quot;@ftc.core.Worlds&quot;;</code> is translated into <code>const Worlds = Java.type(&quot;net.forthecrown.core.Worlds&quot;);</code>.</p>
+<p>Script imports are translated from <code>import &quot;path/to/script.js&quot;</code> to <code>const script = compile(&quot;path/to/script.js&quot;);</code></p>
+<p>Using the <code>as</code> keyword in imports simply changes the name of the <code>const</code> value</p>
+<p>So, if you&rsquo;re having problems with using import statements, feel free to
+fallback to those method calls. Be aware, neither of those 2 methods support the
+import placeholders however.</p>
 <h2 id="built-in">Built in</h2>
 <p>The script engine comes with several custom built in parts, the
 first of these are the classes that are automatically imported in to every script.<br>
@@ -301,7 +336,7 @@ logging, accessible like so:</p>
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified February 11, 2023: <a href="https://github.com/ForTheCrown/Website/commit/5f8f8c1b5212b9f5c6c85d8faf09c616e2967f34">Initial commit (5f8f8c1)</a>
+  Last modified March 19, 2023: <a href="https://github.com/ForTheCrown/Website/commit/a417af2482f7984da6733fdd04f2c23d3baed152">Update java.md (a417af2)</a>
 </div>
 
 </div>

@@ -37,8 +37,8 @@
 
 
 
-<link rel="preload" href="/scss/main.min.334ed55199471c69dafd771f3a14b045a93a9c06b093418d7868ef64fa5cd9b2.css" as="style">
-<link href="/scss/main.min.334ed55199471c69dafd771f3a14b045a93a9c06b093418d7868ef64fa5cd9b2.css" rel="stylesheet" integrity="">
+<link rel="preload" href="/scss/main.min.803c0d0c1c623d1421abc4b6dfdaa1297341c041390085a7b7f2bfbe93fdcdf1.css" as="style">
+<link href="/scss/main.min.803c0d0c1c623d1421abc4b6dfdaa1297341c041390085a7b7f2bfbe93fdcdf1.css" rel="stylesheet" integrity="">
 
 <script
   src="https://code.jquery.com/jquery-3.6.0.min.js"
@@ -96,8 +96,13 @@
   </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-wikidungeons-li">
   <a href="/wiki/dungeons/" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-wikidungeons"><span class="">Dungeons</span></a>
-</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child active-path" id="m-wikiguilds-li">
+</li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child active-path" id="m-wikiguilds-li">
   <a href="/wiki/guilds/" class="align-left pl-0 active td-sidebar-link td-sidebar-link__section" id="m-wikiguilds"><span class="td-sidebar-nav-active-item">Guilds</span></a>
+  <ul class="ul-2 foldable">
+    <li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-wikiguildsmenus-li">
+  <a href="/wiki/guilds/menus/" class="align-left pl-0 td-sidebar-link td-sidebar-link__page" id="m-wikiguildsmenus"><span class="">Menus</span></a>
+</li>
+  </ul>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section without-child" id="m-wikiranks-li">
   <a href="/wiki/ranks/" title="Ranks and Titles" class="align-left pl-0 td-sidebar-link td-sidebar-link__section" id="m-wikiranks"><span class="">Ranks</span></a>
 </li><li class="td-sidebar-nav__section-title td-sidebar-nav__section with-child" id="m-wikicommands-li">
@@ -158,7 +163,17 @@
   
 </div>
 
-            
+            <div class="td-toc">
+        <nav id="TableOfContents">
+  <ul>
+    <li><a href="#how-can-i-join-a-guild">How can I join a Guild?</a></li>
+    <li><a href="#what-is-guild-exp">What is Guild Exp?</a></li>
+    <li><a href="#what-are-guild-chunks">What are Guild Chunks?</a></li>
+    <li><a href="#guild-commands">Guild Commands</a></li>
+  </ul>
+</nav>
+      </div>
+    
             
 
 	
@@ -226,10 +241,29 @@
 	
 
 <div class="pageinfo pageinfo-primary">
-<p>This page is still a work in progress.</p>
+<p>Guilds are groups of players who can work together to unlock cool upgrades.</p>
 
 </div>
 
+<h2 id="how-can-i-join-a-guild">How can I join a Guild?</h2>
+<p>Some guilds (as of March 2023, only <code>Hazelguard</code> and <code>TheWobblyCo.</code>) are public, meaning anyone can join them, if there is room. You can also create your own guild or be invited to join someone else’s, using commands in-game (<a href="/wiki/commands/guild">see the list of guild commands</a>).
+<br>
+The <code>/guild discover</code> menu can be used to get information about all guilds. Each guild is represented by its banner. The options on the right-side of the menu can be used to order and filter guilds.</p>
+<div class="menu"><img src="/images/menus/menu_guild_discover.png" alt="Guild discover menu"></div>
+<p>Once you&rsquo;re part of a guild, you can do <code>/guild</code> to open the guild menu. More info on this menu can be found <a href="/wiki/guilds/menus">here</a>.</p>
+<h2 id="what-is-guild-exp">What is Guild Exp?</h2>
+<p>Guild Exp is used to unlock and upgrade features within your guild. It can be obtained by completing guild challenges, accessed through your guild menu. You can also gain a lot of Guild Exp through completing the daily <code>/shop</code> item challenge.
+<br><br>
+Every member of the guild can choose what feature they would like to spend their Guild Exp on.</p>
+<h2 id="what-are-guild-chunks">What are Guild Chunks?</h2>
+<p>Guild chunks can be unlocked in the Guild Upgrades menu, by spending guild exp. If you have the permission, you can then create a guild chunk with the command <code>/guild chunks claim</code>, which will make whichever chunk you are in a guild chunk. You can view the guild chunks on the <a href="http://mc.forthecrown.net:8155/index.html#">online world-map</a> or use <code>/guild chunks map</code> in-game. <br><br>
+The picture shows an example of using <code>/guild chunks map</code> in-game. Each square represents a chunk. Hover over them with your mouse to get more info.</p>
+<div class="smol"><img src="/images/guild_chunks_map.png" alt="Guild chunk map example"></div>
+<p>When you enter a chunk belonging to a guild, you will see a small message above your hotbar: <code>Entering [Guild name]</code>, and <code>Leaving [Guild name]</code> when you leave the chunk.
+<br>
+You can unlock special effects to apply within these guild chunks in the Guild Upgrades menu, ranging from potion effects to keep inventory, and other perks. These perks usually only apply to members of the guild. Other players that enter these chunks do not receive the same benefits.</p>
+<h2 id="guild-commands">Guild Commands</h2>
+<p>For more information on guild commands, you can do <code>/guild help</code> in-game or view them <a href="/wiki/commands/guild">here</a>.</p>
 
         <div class="section-index">
     
@@ -240,13 +274,23 @@
     
     
     
+    <hr class="panel-line">
+        
+            
+            <div class="entry">
+                <h5>
+                    <a href="/wiki/guilds/menus/">Menus</a>
+                </h5>
+                <p>Get to know the guild menus.</p>
+            </div>
+        
     
 </div>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified February 11, 2023: <a href="https://github.com/ForTheCrown/Website/commit/5f8f8c1b5212b9f5c6c85d8faf09c616e2967f34">Initial commit (5f8f8c1)</a>
+  Last modified March 31, 2023: <a href="https://github.com/ForTheCrown/Website/commit/4d03a176cf649f815ecc694cacb2f84e5c0c5d80">Add guild pages (4d03a17)</a>
 </div>
 
 </div>

@@ -13,5 +13,223 @@
       
     
     
+    <item>
+      <title>Wiki: Menus</title>
+      <link>/wiki/guilds/menus/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/guilds/menus/</guid>
+      <description>
+        
+        
+        &lt;p&gt;Once you’ve joined a guild, you can access your guild menu with the command &lt;code&gt;/guild&lt;/code&gt; (or just &lt;code&gt;/g&lt;/code&gt;). You will see several options in the menu. We&amp;rsquo;ll explain each one in more detail in the following sections.&lt;/p&gt;
+&lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild.png&#34; alt=&#34;Guild menu&#34;&gt;&lt;/div&gt;
+&lt;h2 id=&#34;statistics&#34;&gt;Statistics&lt;/h2&gt;
+&lt;p&gt;Clicking on the &lt;code&gt;name tag&lt;/code&gt; in the main menu opens the Guild Statistics menu.
+&lt;br&gt;&lt;br&gt;
+This displays some detailed information about your guild; your guild’s leader, when the guild was created, and whether there is a public &lt;code&gt;/visit&lt;/code&gt; location for your guild or not. &lt;br&gt;
+By clicking on the members, you can also discover information about the individual members of your guild such as their rank, when they joined, all sorts of exp information, and the maximum number of guild chunks they are able to claim.
+&lt;br&gt;&lt;br&gt;
+You can also see the statistics of other guilds by doing &lt;code&gt;/g info guildname&lt;/code&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;message-board&#34;&gt;Message Board&lt;/h2&gt;
+&lt;p&gt;Clicking on the &lt;code&gt;sign&lt;/code&gt; in the main menu opens the Message Board.
+&lt;br&gt;&lt;br&gt;
+Here anyone in the guild can post a message for other guild members to see. To create a message, click the book and quill in the top right corner, and you can pick a sign to write your message on.&lt;/p&gt;
+&lt;h2 id=&#34;challenges&#34;&gt;Challenges&lt;/h2&gt;
+&lt;p&gt;Clicking on the &lt;code&gt;knowledge book&lt;/code&gt; in the main menu opens the Challenges book.
+&lt;br&gt;&lt;br&gt;
+Challenges are one of the main methods of earning guild exp. There are two different categories of challenges: 5 Daily Challenges which reset every day, and 4 Weekly challenges which reset at the start of each week. You can hover over the text to find out more information about each challenge, and how much guild exp you will be awarded for completing it. Daily challenges earn you less exp than Weekly challenges, but are often easier to complete, whereas Weekly challenges are substantially harder but reward more guild exp.
+&lt;br&gt;&lt;br&gt;
+These challenges are completed personally, meaning each member of the guild can complete them on their own. Each player receives the same challenges though, so you can help others out easily.&lt;/p&gt;
+&lt;h2 id=&#34;guild-chest&#34;&gt;Guild Chest&lt;/h2&gt;
+&lt;p&gt;Clicking on the &lt;code&gt;chest&lt;/code&gt; in the main menu opens the Guild Chest.
+&lt;br&gt;&lt;br&gt;
+This is a shared inventory which anyone in the guild can access, either through the &lt;code&gt;/guild&lt;/code&gt; menu or by using &lt;code&gt;/guild inventory&lt;/code&gt;. You can unlock more space for it by spending guild exp in the Guild Upgrades menu.&lt;/p&gt;
+&lt;h2 id=&#34;guild-upgrades&#34;&gt;Guild Upgrades&lt;/h2&gt;
+&lt;p&gt;Clicking on the &lt;code&gt;golden apple&lt;/code&gt; in the main menu opens the Guild Upgrades menu.
+&lt;br&gt;&lt;br&gt;
+This is where you spend your guild exp! To find out how much guild exp you have available to spend, check out the Guild Members section of the Statistics Menu, and find how much Exp available you have. &lt;br&gt;&lt;/p&gt;
+&lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild_upgrades.png&#34; alt=&#34;Guild upgrades menu&#34;&gt;&lt;/div&gt;
+&lt;p&gt;There are many different features to unlock in the Guild Upgrades menu. You can see how close you are to unlocking them by hovering over the relevant icon, and looking at &lt;code&gt;Progress&lt;/code&gt;, which tells you how much exp you will need to unlock it, and how much you have put towards it already. To assign guild exp towards unlocking a feature, you can click it once to assign 50 guild exp, or shift-click it to assign all your available guild exp. Below is a list of the various features you can unlock for your guild:&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Upgrade&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Info&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:200px&#34;&gt;Cost (Guild Exp)&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Toggle Public-Private&lt;/td&gt;
+&lt;td&gt;Allows you to make your guild public (meaning anyone can join if there is room).&lt;/td&gt;
+&lt;td&gt;1,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Toggle Visit&lt;/td&gt;
+&lt;td&gt;Allows anyone to visit the /visit location of your guild using a waypoint.&lt;/td&gt;
+&lt;td&gt;1,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Guild Ranks&lt;/td&gt;
+&lt;td&gt;Allows you to create ranks within your guild, with up to six different ranks (excluding the guild leader).  Once unlocked, the guild leader can assign different permissions to each rank, including the ability to claim guild chunks. &lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild_ranks.png&#34; alt=&#34;Guild ranks menu&#34;&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;Depends on Rank: &lt;br&gt;1,000&lt;br&gt;2,000&lt;br&gt;5,000&lt;br&gt;10,000&lt;br&gt;25,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Guild Banner&lt;/td&gt;
+&lt;td&gt;Once unlocked, this allows you to change the default guild banner to a custom one.&lt;/td&gt;
+&lt;td&gt;1,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Cosmetics&lt;/td&gt;
+&lt;td&gt;This allows you to customise your guild’s name format, changing its colour/brackets/style. &lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild_cosmetics.png&#34; alt=&#34;Guild cosmetics menu&#34;&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;200 per color&lt;br&gt;500 or 1,000 per format&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Max #chunk-effects&lt;/td&gt;
+&lt;td&gt;This allows you to have multiple effects, once unlocked, within your guild chunks. By default, only one effect is enabled at a time.&lt;/td&gt;
+&lt;td&gt;1 effect: free&lt;br&gt;2 effects: 1,000&lt;br&gt;3 effects: 5,000&lt;br&gt;4 effects: 20,000&lt;br&gt;5 effects: 50,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Max #chunks&lt;/td&gt;
+&lt;td&gt;The limit of guild chunks that can be claimed.&lt;/td&gt;
+&lt;td&gt;16 chunks: free&lt;br&gt;64 chunks: 500&lt;br&gt;150 chunks: 2,000&lt;br&gt;250 chunks: 5,000&lt;br&gt;500 chunks: 20,000&lt;br&gt;1000 chunks: 50,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Max #members&lt;/td&gt;
+&lt;td&gt;The limit of guild members you can have in your guild.&lt;/td&gt;
+&lt;td&gt;3 members: free&lt;br&gt;5 members: 500&lt;br&gt;10 members: 2,000&lt;br&gt;20 members: 5,000&lt;br&gt;50 members: 20,000&lt;br&gt;100 members: 50,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Guild Chest Size&lt;/td&gt;
+&lt;td&gt;Each guild has a shared inventory through the guild chest, accessed with /guild inventory. This allows you to increase inventory size of the guild chest by spending guild exp; by default only 9 slots are unlocked.&lt;/td&gt;
+&lt;td&gt;9 slots: free&lt;br&gt;18 slots: 500&lt;br&gt;27 slots: 1,500&lt;br&gt;36 slots: 3,000&lt;br&gt;45 slots: 5,000&lt;br&gt;54 slots: 10,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Discord Menu&lt;/td&gt;
+&lt;td&gt;After unlocking this, you can gain a guild role in the server’s discord, if your accounts are linked. By donating &lt;a href=&#34;https://forthecrown.buycraft.net/category/guilds&#34;&gt;here&lt;/a&gt; in the webstore you can also unlock a special Discord role colour to match your guild’s cosmetics, and create a private Discord channel, which is linked to your in-game guild chat, allowing you to talk to members of your guild even when you’re offline. &lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild_discord_upgrades.png&#34; alt=&#34;Guild discord upgrades menu&#34;&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;4,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Exp Multipliers&lt;/td&gt;
+&lt;td&gt;There are 3 different types of multipliers, which increase the amount of guild exp you will earn through completing challenges; the Guild Multiplier, which applies only to your guild, the Global Multiplier which you can buy in the webstore &lt;a href=&#34;https://forthecrown.buycraft.net/category/global-guild-exp-mul&#34;&gt;here&lt;/a&gt;, and the Weekend Multiplier which applies automatically at weekends, multiplying guild exp by 1.5x. These multipliers do stack! &lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild_multipliers.png&#34; alt=&#34;Guild exp multipliers menu&#34;&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;Not obtainable with exp&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Chunk Upgrades&lt;/td&gt;
+&lt;td&gt;Here, you can unlock different effects which will apply within your guild chunks. See the next tables for an overview of all effects. &lt;div class=&#34;menu&#34;&gt;&lt;img src=&#34;/images/menus/menu_guild_chunk_upgrades.png&#34; alt=&#34;Guild chunk upgrades menu&#34;&gt;&lt;/div&gt;&lt;/td&gt;
+&lt;td&gt;Depends on effect&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;potion-effects&#34;&gt;Potion effects&lt;/h5&gt;
+&lt;p&gt;These grant one extra level of the effect within guild chunks. This means when a player enters a guild chunk with the speed effect active, they will receive &lt;code&gt;speed I&lt;/code&gt; within the chunk. If they enter with &lt;code&gt;speed II&lt;/code&gt; already applied on them, the &lt;code&gt;speed II&lt;/code&gt; will be converted to &lt;code&gt;speed III&lt;/code&gt;.&lt;/p&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Effect&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Info&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:200px&#34;&gt;Cost (Guild Exp)&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Speed&lt;/td&gt;
+&lt;td&gt;Increase speed in guild chunks.&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Resistance&lt;/td&gt;
+&lt;td&gt;Reduce damage taken in guild chunks.&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Jump Boost&lt;/td&gt;
+&lt;td&gt;Increase jump boost in guild chunks.&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Strength&lt;/td&gt;
+&lt;td&gt;Increase strength in guild chunks.&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Regeneration&lt;/td&gt;
+&lt;td&gt;Increase regeneration in guild chunks.&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Haste&lt;/td&gt;
+&lt;td&gt;Increase mining speed in guild chunks.&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h5 id=&#34;other-effects&#34;&gt;Other effects&lt;/h5&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Effect&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Info&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;&lt;div style=&#34;width:200px&#34;&gt;Cost (Guild Exp)&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Reduced Fall Damage&lt;/td&gt;
+&lt;td&gt;Reduce fall damage in guild chunks by 2 hearts.&lt;/td&gt;
+&lt;td&gt;2,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Deny Slime Spawning&lt;/td&gt;
+&lt;td&gt;Stop slimes spawning in guild chunks.&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;More Mob Exp&lt;/td&gt;
+&lt;td&gt;Mobs drop 50% more experience in guild chunks.&lt;/td&gt;
+&lt;td&gt;10,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Saturation&lt;/td&gt;
+&lt;td&gt;Reduce hunger in guild chunks.&lt;/td&gt;
+&lt;td&gt;10,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Infinite Enderpearl&lt;/td&gt;
+&lt;td&gt;Throwing enderpearls in guild chunks won’t consume them.&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Tool Durability&lt;/td&gt;
+&lt;td&gt;Reduce damage on tools in guild chunks by 50%.&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Armour Durability&lt;/td&gt;
+&lt;td&gt;Reduce damage on armour in guild chunks by 50%.&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Easier Villagers&lt;/td&gt;
+&lt;td&gt;Villagers can be leashed in player chunks.&lt;/td&gt;
+&lt;td&gt;5,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Keep Inventory&lt;/td&gt;
+&lt;td&gt;Keep your inventory when dying in guild chunks.&lt;/td&gt;
+&lt;td&gt;10,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Keep Levels&lt;/td&gt;
+&lt;td&gt;Keep your xp levels when dying in guild chunks.&lt;/td&gt;
+&lt;td&gt;10,000&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

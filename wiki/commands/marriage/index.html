@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/commands/marriage/" /><meta property="article:section" content="wiki" />
 
-<meta property="article:modified_time" content="2023-03-21T15:12:37+02:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-30T23:37:48+03:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Marriage">
 <meta itemprop="description" content="Marriage Commands
 ">
-<meta itemprop="dateModified" content="2023-03-21T15:12:37+02:00" />
-<meta itemprop="wordCount" content="120">
+<meta itemprop="dateModified" content="2023-03-30T23:37:48+03:00" />
+<meta itemprop="wordCount" content="130">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Marriage"/>
 <meta name="twitter:description" content="Marriage Commands
@@ -165,23 +165,31 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#usages">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-1">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-2">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-3">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-4">Usages</a></li>
+    <li><a href="#divorce-a-namecommands_marriage_commanddivorcea">/divorce <a name="commands_marriage_CommandDivorce"></a></a>
+      <ul>
+        <li><a href="#usages">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marriagechat-a-namecommands_marriage_commandmarriagechata">/marriagechat <a name="commands_marriage_CommandMarriageChat"></a></a>
+      <ul>
+        <li><a href="#usages-1">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marry-a-namecommands_marriage_commandmarrya">/marry <a name="commands_marriage_CommandMarry"></a></a>
+      <ul>
+        <li><a href="#usages-2">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marryaccept-a-namecommands_marriage_commandmarriageaccepta">/marryaccept <a name="commands_marriage_CommandMarriageAccept"></a></a>
+      <ul>
+        <li><a href="#usages-3">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marrydeny-a-namecommands_marriage_commandmarriagedenya">/marrydeny <a name="commands_marriage_CommandMarriageDeny"></a></a>
+      <ul>
+        <li><a href="#usages-4">Usages</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -255,56 +263,61 @@
 	</header>    
 	<h1 id="table-of-contents">Table of Contents</h1>
 <ul>
-<li><a href="#net_forthecrown_commands_marriage_CommandMarry">marry</a></li>
-<li><a href="#net_forthecrown_commands_marriage_CommandDivorce">divorce</a></li>
-<li><a href="#net_forthecrown_commands_marriage_CommandMarriageAccept">marryaccept</a></li>
-<li><a href="#net_forthecrown_commands_marriage_CommandMarriageDeny">marrydeny</a></li>
-<li><a href="#net_forthecrown_commands_marriage_CommandMarriageChat">marriagechat</a></li>
+<li><a href="#commands_marriage_CommandDivorce">/divorce</a></li>
+<li><a href="#commands_marriage_CommandMarriageChat">/marriagechat</a></li>
+<li><a href="#commands_marriage_CommandMarry">/marry</a></li>
+<li><a href="#commands_marriage_CommandMarriageAccept">/marryaccept</a></li>
+<li><a href="#commands_marriage_CommandMarriageDeny">/marrydeny</a></li>
 </ul>
 <h1 id="commands">Commands</h1>
-<h1 id="marry-a-namenet_forthecrown_commands_marriage_commandmarrya">/marry <a name="net_forthecrown_commands_marriage_CommandMarry"></a></h1>
-<p>Marry a person</p>
-<p>Permission: <code>ftc.marry</code></p>
-<h2 id="usages">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marry &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Propose to a &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="divorce-a-namenet_forthecrown_commands_marriage_commanddivorcea">/divorce <a name="net_forthecrown_commands_marriage_CommandDivorce"></a></h1>
+<h2 id="divorce-a-namecommands_marriage_commanddivorcea">/divorce <a name="commands_marriage_CommandDivorce"></a></h2>
 <p>Divorces your spouse</p>
-<p>Permission: <code>ftc.marry</code></p>
-<h2 id="usages-1">Usages</h2>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.marry</code></p>
+<h3 id="usages">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/divorce</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Divorces your spouse</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="marryaccept-a-namenet_forthecrown_commands_marriage_commandmarriageaccepta">/marryaccept <a name="net_forthecrown_commands_marriage_CommandMarriageAccept"></a></h1>
-<p>Accept a marriage proposal</p>
-<p>Permission: <code>ftc.marry</code><br>
-Aliases: <code>maccept</code></p>
-<h2 id="usages-2">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marryaccept &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Accepts a marriage proposal from a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="marrydeny-a-namenet_forthecrown_commands_marriage_commandmarriagedenya">/marrydeny <a name="net_forthecrown_commands_marriage_CommandMarriageDeny"></a></h1>
-<p>Deny a person&rsquo;s marriage request</p>
-<p>Permission: <code>ftc.marry</code><br>
-Aliases: <code>mdeny</code></p>
-<h2 id="usages-3">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marrydeny</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Deny a person&#39;s marriage request</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="marriagechat-a-namenet_forthecrown_commands_marriage_commandmarriagechata">/marriagechat <a name="net_forthecrown_commands_marriage_CommandMarriageChat"></a></h1>
+</span></span></span></code></pre></div><h2 id="marriagechat-a-namecommands_marriage_commandmarriagechata">/marriagechat <a name="commands_marriage_CommandMarriageChat"></a></h2>
 <p>Chat with your spouse privately</p>
-<p>Permission: <code>ftc.marry</code><br>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.marry</code><br>
 Aliases: <code>marryc</code>, <code>marriagec</code>, <code>mc</code>, <code>mchat</code></p>
-<h2 id="usages-4">Usages</h2>
+<h3 id="usages-1">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marriagechat &lt;message&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Chats with your spouse</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="marry-a-namecommands_marriage_commandmarrya">/marry <a name="commands_marriage_CommandMarry"></a></h2>
+<p>Marry a person</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.marry</code></p>
+<h3 id="usages-2">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marry &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Propose to a &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="marryaccept-a-namecommands_marriage_commandmarriageaccepta">/marryaccept <a name="commands_marriage_CommandMarriageAccept"></a></h2>
+<p>Accept a marriage proposal</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.marry</code><br>
+Aliases: <code>maccept</code></p>
+<h3 id="usages-3">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marryaccept &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Accepts a marriage proposal from a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="marrydeny-a-namecommands_marriage_commandmarriagedenya">/marrydeny <a name="commands_marriage_CommandMarriageDeny"></a></h2>
+<p>Deny a person&rsquo;s marriage request</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.marry</code><br>
+Aliases: <code>mdeny</code></p>
+<h3 id="usages-4">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marrydeny</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Deny a person&#39;s marriage request</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h1 id="metadata">Metadata</h1>
 <p>This is an auto-generated command documentation file generated by the FTC plugin.<br>
-Date: <code>Tue Mar 21 15:10:51 EET 2023</code><br>
-Plugin version: <code>1.19.4-1719-SNAPSHOT</code><br>
+Date: <code>Thu Mar 30 22:08:46 CEST 2023</code><br>
+Plugin version: <code>1.19.4-1733-RELEASE</code><br>
 Total commands: 5</p>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 21, 2023: <a href="https://github.com/ForTheCrown/Website/commit/7bfe88a0ff2befa57e4c880f7743cb51bb828db5">Add command documentation files (7bfe88a)</a>
+  Last modified March 30, 2023: <a href="https://github.com/ForTheCrown/Website/commit/c05f872af80a1445faaa5df5de55bde36ee2f456">Update command pages (c05f872)</a>
 </div>
 
 </div>

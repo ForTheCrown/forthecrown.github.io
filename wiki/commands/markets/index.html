@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/commands/markets/" /><meta property="article:section" content="wiki" />
 
-<meta property="article:modified_time" content="2023-03-21T15:12:37+02:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-30T23:37:48+03:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Markets">
 <meta itemprop="description" content="Markets Commands
 ">
-<meta itemprop="dateModified" content="2023-03-21T15:12:37+02:00" />
-<meta itemprop="wordCount" content="619">
+<meta itemprop="dateModified" content="2023-03-30T23:37:48+03:00" />
+<meta itemprop="wordCount" content="637">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Markets"/>
 <meta name="twitter:description" content="Markets Commands
@@ -165,39 +165,51 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#usages">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-1">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-2">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-3">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-4">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-5">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-6">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-7">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-8">Usages</a></li>
+    <li><a href="#market-a-namecommands_markets_commandmarketa">/market <a name="commands_markets_CommandMarket"></a></a>
+      <ul>
+        <li><a href="#usages">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marketappeal-a-namecommands_markets_commandmarketappeala">/marketappeal <a name="commands_markets_CommandMarketAppeal"></a></a>
+      <ul>
+        <li><a href="#usages-1">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marketediting-a-namecommands_markets_commandmarketeditinga">/marketediting <a name="commands_markets_CommandMarketEditing"></a></a>
+      <ul>
+        <li><a href="#usages-2">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#marketevict-a-namecommands_markets_commandmarketwarninga">/marketevict <a name="commands_markets_CommandMarketWarning"></a></a>
+      <ul>
+        <li><a href="#usages-3">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#mergeshop-a-namecommands_markets_commandmergeshopa">/mergeshop <a name="commands_markets_CommandMergeShop"></a></a>
+      <ul>
+        <li><a href="#usages-4">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#shoptrust-a-namecommands_markets_commandshoptrusta">/shoptrust <a name="commands_markets_CommandShopTrust"></a></a>
+      <ul>
+        <li><a href="#usages-5">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#transfershop-a-namecommands_markets_commandtransfershopa">/transfershop <a name="commands_markets_CommandTransferShop"></a></a>
+      <ul>
+        <li><a href="#usages-6">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#unclaimshop-a-namecommands_markets_commandunclaimshopa">/unclaimshop <a name="commands_markets_CommandUnclaimShop"></a></a>
+      <ul>
+        <li><a href="#usages-7">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#unmerge-a-namecommands_markets_commandunmergea">/unmerge <a name="commands_markets_CommandUnmerge"></a></a>
+      <ul>
+        <li><a href="#usages-8">Usages</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -271,90 +283,23 @@
 	</header>    
 	<h1 id="table-of-contents">Table of Contents</h1>
 <ul>
-<li><a href="#net_forthecrown_commands_markets_CommandUnmerge">unmerge</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandMergeShop">mergeshop</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandMarketAppeal">marketappeal</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandUnclaimShop">unclaimshop</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandMarketWarning">marketevict</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandShopTrust">shoptrust</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandMarketEditing">marketediting</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandTransferShop">transfershop</a></li>
-<li><a href="#net_forthecrown_commands_markets_CommandMarket">market</a></li>
+<li><a href="#commands_markets_CommandMarket">/market</a></li>
+<li><a href="#commands_markets_CommandMarketAppeal">/marketappeal</a></li>
+<li><a href="#commands_markets_CommandMarketEditing">/marketediting</a></li>
+<li><a href="#commands_markets_CommandMarketWarning">/marketevict</a></li>
+<li><a href="#commands_markets_CommandMergeShop">/mergeshop</a></li>
+<li><a href="#commands_markets_CommandShopTrust">/shoptrust</a></li>
+<li><a href="#commands_markets_CommandTransferShop">/transfershop</a></li>
+<li><a href="#commands_markets_CommandUnclaimShop">/unclaimshop</a></li>
+<li><a href="#commands_markets_CommandUnmerge">/unmerge</a></li>
 </ul>
 <h1 id="commands">Commands</h1>
-<h1 id="unmerge-a-namenet_forthecrown_commands_markets_commandunmergea">/unmerge <a name="net_forthecrown_commands_markets_CommandUnmerge"></a></h1>
-<p>Unmerges the shop you own with the shop it&rsquo;s merged with</p>
-<p>Permission: <code>ftc.markets</code><br>
-Aliases: <code>marketunmerge</code>, <code>shopunmerge</code>, <code>unmergeshop</code>, <code>unmergemarket</code></p>
-<h2 id="usages">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/unmerge</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Unmerges the shop you own with the shop it&#39;s merged with</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="mergeshop-a-namenet_forthecrown_commands_markets_commandmergeshopa">/mergeshop <a name="net_forthecrown_commands_markets_CommandMergeShop"></a></h1>
-<p>Request to merge your shop with someone else&rsquo;s</p>
-<p>Permission: <code>ftc.markets</code><br>
-Aliases: <code>mergemarket</code>, <code>shopmerge</code>, <code>marketmerge</code></p>
-<h2 id="usages-1">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/mergeshop &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Requests to merge your shop with a &lt;user&gt;&#39;s shop</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/mergeshop &lt;user&gt; confirm</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Confirms a merge request that came from a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/mergeshop &lt;user&gt; deny</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Denies a merge request that came from a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/mergeshop &lt;user&gt; cancel</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a merge request sent to a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="marketappeal-a-namenet_forthecrown_commands_markets_commandmarketappeala">/marketappeal <a name="net_forthecrown_commands_markets_CommandMarketAppeal"></a></h1>
-<p>Appeals an automated market eviction</p>
-<p>Permission: <code>ftc.markets</code></p>
-<h2 id="usages-2">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marketappeal</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Appeals an automated market eviction</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="unclaimshop-a-namenet_forthecrown_commands_markets_commandunclaimshopa">/unclaimshop <a name="net_forthecrown_commands_markets_CommandUnclaimShop"></a></h1>
-<p>Makes you unclaim your shop in Hazelguard</p>
-<p>Permission: <code>ftc.markets</code><br>
-Aliases: <code>unclaimmarket</code></p>
-<h2 id="usages-3">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/unclaimshop</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Makes you unclaim your shop in Hazelguard</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="marketevict-a-namenet_forthecrown_commands_markets_commandmarketwarninga">/marketevict <a name="net_forthecrown_commands_markets_CommandMarketWarning"></a></h1>
-<p>Issues/revokes a shop eviction</p>
-<p>Permission: <code>ftc.markets.warning</code><br>
-Aliases: <code>shopevict</code>, <code>evictshop</code>, <code>evictmarket</code></p>
-<h2 id="usages-4">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marketevict &lt;user | shop&gt; &lt;value&gt; &lt;time&gt; &lt;reason&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Starts a market eviction with &lt;reason&gt;.</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># The owner will be evicted after &lt;time&gt; has passed</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/marketevict &lt;user | shop&gt; &lt;value&gt; undo</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a shop eviction</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="shoptrust-a-namenet_forthecrown_commands_markets_commandshoptrusta">/shoptrust <a name="net_forthecrown_commands_markets_CommandShopTrust"></a></h1>
-<p>Trusts/untrusts a player in your shop</p>
-<p>Permission: <code>ftc.markets</code><br>
-Aliases: <code>shopuntrust</code>, <code>markettrust</code>, <code>marketuntrust</code></p>
-<h2 id="usages-5">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/shoptrust &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Trusts/untrusts a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="marketediting-a-namenet_forthecrown_commands_markets_commandmarketeditinga">/marketediting <a name="net_forthecrown_commands_markets_CommandMarketEditing"></a></h1>
-<p>Allows/disallows shop members to edit sign shops in your shop</p>
-<p>Permission: <code>ftc.markets</code><br>
-Aliases: <code>toggleshopediting</code>, <code>togglemarketediting</code></p>
-<h2 id="usages-6">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marketediting</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Allows/disallows shop members to edit sign shops in your shop</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="transfershop-a-namenet_forthecrown_commands_markets_commandtransfershopa">/transfershop <a name="net_forthecrown_commands_markets_CommandTransferShop"></a></h1>
-<p>Transfers a player&rsquo;s shop in Hazelguard to another player</p>
-<p>Permission: <code>ftc.markets</code><br>
-Aliases: <code>transfermarket</code>, <code>shoptransfer</code>, <code>markettransfer</code></p>
-<h2 id="usages-7">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/transfershop &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Transfers the shop you own to a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="market-a-namenet_forthecrown_commands_markets_commandmarketa">/market <a name="net_forthecrown_commands_markets_CommandMarket"></a></h1>
+<h2 id="market-a-namecommands_markets_commandmarketa">/market <a name="commands_markets_CommandMarket"></a></h2>
 <p>General purpose commands to manage markets</p>
-<p>Permission: <code>ftc.admin</code><br>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.admin</code><br>
 Aliases: <code>markets</code>, <code>shops</code></p>
-<h2 id="usages-8">Usages</h2>
+<h3 id="usages">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/market refresh_all</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Refreshes all existing shops</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># This will just ensure every shop&#39;s entrance</span><span style="color:#f8f8f8;text-decoration:underline">
@@ -418,16 +363,92 @@ Aliases: <code>markets</code>, <code>shops</code></p>
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/market &lt;shop name&gt; reset</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Resets the shop</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="marketappeal-a-namecommands_markets_commandmarketappeala">/marketappeal <a name="commands_markets_CommandMarketAppeal"></a></h2>
+<p>Appeals an automated market eviction</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code></p>
+<h3 id="usages-1">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marketappeal</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Appeals an automated market eviction</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="marketediting-a-namecommands_markets_commandmarketeditinga">/marketediting <a name="commands_markets_CommandMarketEditing"></a></h2>
+<p>Allows/disallows shop members to edit sign shops in your shop</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code><br>
+Aliases: <code>toggleshopediting</code>, <code>togglemarketediting</code></p>
+<h3 id="usages-2">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marketediting</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Allows/disallows shop members to edit sign shops in your shop</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="marketevict-a-namecommands_markets_commandmarketwarninga">/marketevict <a name="commands_markets_CommandMarketWarning"></a></h2>
+<p>Issues/revokes a shop eviction</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets.warning</code><br>
+Aliases: <code>shopevict</code>, <code>evictshop</code>, <code>evictmarket</code></p>
+<h3 id="usages-3">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/marketevict &lt;user | shop&gt; &lt;value&gt; &lt;time&gt; &lt;reason&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Starts a market eviction with &lt;reason&gt;.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># The owner will be evicted after &lt;time&gt; has passed</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/marketevict &lt;user | shop&gt; &lt;value&gt; undo</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a shop eviction</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="mergeshop-a-namecommands_markets_commandmergeshopa">/mergeshop <a name="commands_markets_CommandMergeShop"></a></h2>
+<p>Request to merge your shop with someone else&rsquo;s</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code><br>
+Aliases: <code>mergemarket</code>, <code>shopmerge</code>, <code>marketmerge</code></p>
+<h3 id="usages-4">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/mergeshop &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Requests to merge your shop with a &lt;user&gt;&#39;s shop</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/mergeshop &lt;user&gt; confirm</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Confirms a merge request that came from a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/mergeshop &lt;user&gt; deny</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Denies a merge request that came from a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/mergeshop &lt;user&gt; cancel</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a merge request sent to a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="shoptrust-a-namecommands_markets_commandshoptrusta">/shoptrust <a name="commands_markets_CommandShopTrust"></a></h2>
+<p>Trusts/untrusts a player in your shop</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code><br>
+Aliases: <code>shopuntrust</code>, <code>markettrust</code>, <code>marketuntrust</code></p>
+<h3 id="usages-5">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/shoptrust &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Trusts/untrusts a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="transfershop-a-namecommands_markets_commandtransfershopa">/transfershop <a name="commands_markets_CommandTransferShop"></a></h2>
+<p>Transfers a player&rsquo;s shop in Hazelguard to another player</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code><br>
+Aliases: <code>transfermarket</code>, <code>shoptransfer</code>, <code>markettransfer</code></p>
+<h3 id="usages-6">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/transfershop &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Transfers the shop you own to a &lt;user&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="unclaimshop-a-namecommands_markets_commandunclaimshopa">/unclaimshop <a name="commands_markets_CommandUnclaimShop"></a></h2>
+<p>Makes you unclaim your shop in Hazelguard</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code><br>
+Aliases: <code>unclaimmarket</code></p>
+<h3 id="usages-7">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/unclaimshop</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Makes you unclaim your shop in Hazelguard</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="unmerge-a-namecommands_markets_commandunmergea">/unmerge <a name="commands_markets_CommandUnmerge"></a></h2>
+<p>Unmerges the shop you own with the shop it&rsquo;s merged with</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.markets</code><br>
+Aliases: <code>marketunmerge</code>, <code>shopunmerge</code>, <code>unmergeshop</code>, <code>unmergemarket</code></p>
+<h3 id="usages-8">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/unmerge</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Unmerges the shop you own with the shop it&#39;s merged with</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h1 id="metadata">Metadata</h1>
 <p>This is an auto-generated command documentation file generated by the FTC plugin.<br>
-Date: <code>Tue Mar 21 15:10:51 EET 2023</code><br>
-Plugin version: <code>1.19.4-1719-SNAPSHOT</code><br>
+Date: <code>Thu Mar 30 22:08:46 CEST 2023</code><br>
+Plugin version: <code>1.19.4-1733-RELEASE</code><br>
 Total commands: 9</p>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 21, 2023: <a href="https://github.com/ForTheCrown/Website/commit/7bfe88a0ff2befa57e4c880f7743cb51bb828db5">Add command documentation files (7bfe88a)</a>
+  Last modified March 30, 2023: <a href="https://github.com/ForTheCrown/Website/commit/c05f872af80a1445faaa5df5de55bde36ee2f456">Update command pages (c05f872)</a>
 </div>
 
 </div>

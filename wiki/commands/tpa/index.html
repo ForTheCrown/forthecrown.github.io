@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/commands/tpa/" /><meta property="article:section" content="wiki" />
 
-<meta property="article:modified_time" content="2023-03-21T15:12:37+02:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-30T23:37:48+03:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Tpa">
 <meta itemprop="description" content="Tpa Commands
 ">
-<meta itemprop="dateModified" content="2023-03-21T15:12:37+02:00" />
-<meta itemprop="wordCount" content="160">
+<meta itemprop="dateModified" content="2023-03-30T23:37:48+03:00" />
+<meta itemprop="wordCount" content="174">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Tpa"/>
 <meta name="twitter:description" content="Tpa Commands
@@ -165,31 +165,41 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#usages">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-1">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-2">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-3">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-4">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-5">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-6">Usages</a></li>
+    <li><a href="#tpacancel-a-namecommands_tpa_commandtpacancela">/tpacancel <a name="commands_tpa_CommandTpaCancel"></a></a>
+      <ul>
+        <li><a href="#usages">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#tpaccept-a-namecommands_tpa_commandtpaaccepta">/tpaccept <a name="commands_tpa_CommandTpaAccept"></a></a>
+      <ul>
+        <li><a href="#usages-1">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#tpask-a-namecommands_tpa_commandtpaska">/tpask <a name="commands_tpa_CommandTpask"></a></a>
+      <ul>
+        <li><a href="#usages-2">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#tpaskhere-a-namecommands_tpa_commandtpaskherea">/tpaskhere <a name="commands_tpa_CommandTpaskHere"></a></a>
+      <ul>
+        <li><a href="#usages-3">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#tpcancel-a-namecommands_tpa_commandtpcancela">/tpcancel <a name="commands_tpa_CommandTpCancel"></a></a>
+      <ul>
+        <li><a href="#usages-4">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#tpdeny-a-namecommands_tpa_commandtpdenya">/tpdeny <a name="commands_tpa_CommandTpDeny"></a></a>
+      <ul>
+        <li><a href="#usages-5">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#tpdenyall-a-namecommands_tpa_commandtpdenyalla">/tpdenyall <a name="commands_tpa_CommandTpDenyAll"></a></a>
+      <ul>
+        <li><a href="#usages-6">Usages</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -263,70 +273,77 @@
 	</header>    
 	<h1 id="table-of-contents">Table of Contents</h1>
 <ul>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpDenyAll">tpdenyall</a></li>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpDeny">tpdeny</a></li>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpCancel">tpcancel</a></li>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpask">tpask</a></li>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpaskHere">tpaskhere</a></li>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpaCancel">tpacancel</a></li>
-<li><a href="#net_forthecrown_commands_tpa_CommandTpaAccept">tpaccept</a></li>
+<li><a href="#commands_tpa_CommandTpaCancel">/tpacancel</a></li>
+<li><a href="#commands_tpa_CommandTpaAccept">/tpaccept</a></li>
+<li><a href="#commands_tpa_CommandTpask">/tpask</a></li>
+<li><a href="#commands_tpa_CommandTpaskHere">/tpaskhere</a></li>
+<li><a href="#commands_tpa_CommandTpCancel">/tpcancel</a></li>
+<li><a href="#commands_tpa_CommandTpDeny">/tpdeny</a></li>
+<li><a href="#commands_tpa_CommandTpDenyAll">/tpdenyall</a></li>
 </ul>
 <h1 id="commands">Commands</h1>
-<h1 id="tpdenyall-a-namenet_forthecrown_commands_tpa_commandtpdenyalla">/tpdenyall <a name="net_forthecrown_commands_tpa_CommandTpDenyAll"></a></h1>
-<p>Denies all incoming tpa requests</p>
-<p>Permission: <code>ftc.commands.tpa</code></p>
-<h2 id="usages">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpdenyall</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Denies all incoming tpa requests</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="tpdeny-a-namenet_forthecrown_commands_tpa_commandtpdenya">/tpdeny <a name="net_forthecrown_commands_tpa_CommandTpDeny"></a></h1>
-<p>Denies a tpa request</p>
-<p>Permission: <code>ftc.commands.tpa</code><br>
-Aliases: <code>tpadeny</code></p>
-<h2 id="usages-1">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpdeny</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Denies a tpa request</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="tpcancel-a-namenet_forthecrown_commands_tpa_commandtpcancela">/tpcancel <a name="net_forthecrown_commands_tpa_CommandTpCancel"></a></h1>
-<p>Cancels a teleport</p>
-<p>Permission: <code>ftc.commands.tpa</code></p>
-<h2 id="usages-2">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpcancel</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a teleport</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="tpask-a-namenet_forthecrown_commands_tpa_commandtpaska">/tpask <a name="net_forthecrown_commands_tpa_CommandTpask"></a></h1>
-<p>Asks a to teleport to a player.</p>
-<p>Permission: <code>ftc.commands.tpa</code><br>
-Aliases: <code>tpa</code>, <code>tprequest</code>, <code>tpr</code>, <code>etpa</code>, <code>etpask</code></p>
-<h2 id="usages-3">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpask &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Asks to teleport to a &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="tpaskhere-a-namenet_forthecrown_commands_tpa_commandtpaskherea">/tpaskhere <a name="net_forthecrown_commands_tpa_CommandTpaskHere"></a></h1>
-<p>Asks a player to teleport to them.</p>
-<p>Permission: <code>ftc.commands.tpahere</code><br>
-Aliases: <code>tpahere</code>, <code>eptahere</code>, <code>etpaskhere</code></p>
-<h2 id="usages-4">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpaskhere &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Asks a &lt;player&gt; to teleport to you</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="tpacancel-a-namenet_forthecrown_commands_tpa_commandtpacancela">/tpacancel <a name="net_forthecrown_commands_tpa_CommandTpaCancel"></a></h1>
+<h2 id="tpacancel-a-namecommands_tpa_commandtpacancela">/tpacancel <a name="commands_tpa_CommandTpaCancel"></a></h2>
 <p>Cancels a tpa request</p>
-<p>Permission: <code>ftc.commands.tpa</code></p>
-<h2 id="usages-5">Usages</h2>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpa</code></p>
+<h3 id="usages">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpacancel</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a tpa request</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="tpaccept-a-namenet_forthecrown_commands_tpa_commandtpaaccepta">/tpaccept <a name="net_forthecrown_commands_tpa_CommandTpaAccept"></a></h1>
+</span></span></span></code></pre></div><h2 id="tpaccept-a-namecommands_tpa_commandtpaaccepta">/tpaccept <a name="commands_tpa_CommandTpaAccept"></a></h2>
 <p>Accepts a tpa request</p>
-<p>Permission: <code>ftc.commands.tpa</code></p>
-<h2 id="usages-6">Usages</h2>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpa</code></p>
+<h3 id="usages-1">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpaccept</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Accepts a tpa request</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="tpask-a-namecommands_tpa_commandtpaska">/tpask <a name="commands_tpa_CommandTpask"></a></h2>
+<p>Asks a to teleport to a player.</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpa</code><br>
+Aliases: <code>tpa</code>, <code>tprequest</code>, <code>tpr</code>, <code>etpa</code>, <code>etpask</code></p>
+<h3 id="usages-2">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpask &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Asks to teleport to a &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="tpaskhere-a-namecommands_tpa_commandtpaskherea">/tpaskhere <a name="commands_tpa_CommandTpaskHere"></a></h2>
+<p>Asks a player to teleport to them.</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpahere</code><br>
+Aliases: <code>tpahere</code>, <code>eptahere</code>, <code>etpaskhere</code></p>
+<h3 id="usages-3">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpaskhere &lt;player&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Asks a &lt;player&gt; to teleport to you</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="tpcancel-a-namecommands_tpa_commandtpcancela">/tpcancel <a name="commands_tpa_CommandTpCancel"></a></h2>
+<p>Cancels a teleport</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpa</code></p>
+<h3 id="usages-4">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpcancel</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Cancels a teleport</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="tpdeny-a-namecommands_tpa_commandtpdenya">/tpdeny <a name="commands_tpa_CommandTpDeny"></a></h2>
+<p>Denies a tpa request</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpa</code><br>
+Aliases: <code>tpadeny</code></p>
+<h3 id="usages-5">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpdeny</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Denies a tpa request</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="tpdenyall-a-namecommands_tpa_commandtpdenyalla">/tpdenyall <a name="commands_tpa_CommandTpDenyAll"></a></h2>
+<p>Denies all incoming tpa requests</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.tpa</code></p>
+<h3 id="usages-6">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/tpdenyall</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Denies all incoming tpa requests</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h1 id="metadata">Metadata</h1>
 <p>This is an auto-generated command documentation file generated by the FTC plugin.<br>
-Date: <code>Tue Mar 21 15:10:51 EET 2023</code><br>
-Plugin version: <code>1.19.4-1719-SNAPSHOT</code><br>
+Date: <code>Thu Mar 30 22:08:46 CEST 2023</code><br>
+Plugin version: <code>1.19.4-1733-RELEASE</code><br>
 Total commands: 7</p>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 21, 2023: <a href="https://github.com/ForTheCrown/Website/commit/7bfe88a0ff2befa57e4c880f7743cb51bb828db5">Add command documentation files (7bfe88a)</a>
+  Last modified March 30, 2023: <a href="https://github.com/ForTheCrown/Website/commit/c05f872af80a1445faaa5df5de55bde36ee2f456">Update command pages (c05f872)</a>
 </div>
 
 </div>

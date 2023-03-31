@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/commands/waypoint/" /><meta property="article:section" content="wiki" />
 
-<meta property="article:modified_time" content="2023-03-21T15:12:37+02:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-30T23:37:48+03:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Waypoint">
 <meta itemprop="description" content="Waypoint Commands
 ">
-<meta itemprop="dateModified" content="2023-03-21T15:12:37+02:00" />
-<meta itemprop="wordCount" content="289">
+<meta itemprop="dateModified" content="2023-03-30T23:37:48+03:00" />
+<meta itemprop="wordCount" content="303">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Waypoint"/>
 <meta name="twitter:description" content="Waypoint Commands
@@ -165,31 +165,41 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#usages">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-1">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-2">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-3">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-4">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-5">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-6">Usages</a></li>
+    <li><a href="#createwaypoint-a-namecommands_waypoint_commandcreatewaypointa">/createwaypoint <a name="commands_waypoint_CommandCreateWaypoint"></a></a>
+      <ul>
+        <li><a href="#usages">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#homewaypoint-a-namecommands_waypoint_commandhomewaypointa">/homewaypoint <a name="commands_waypoint_CommandHomeWaypoint"></a></a>
+      <ul>
+        <li><a href="#usages-1">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#invite-a-namecommands_waypoint_commandinvitea">/invite <a name="commands_waypoint_CommandInvite"></a></a>
+      <ul>
+        <li><a href="#usages-2">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#listwaypoints-a-namecommands_waypoint_commandlistwaypointsa">/listwaypoints <a name="commands_waypoint_CommandListWaypoints"></a></a>
+      <ul>
+        <li><a href="#usages-3">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#movein-a-namecommands_waypoint_commandmoveina">/movein <a name="commands_waypoint_CommandMoveIn"></a></a>
+      <ul>
+        <li><a href="#usages-4">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#visit-a-namecommands_waypoint_commandvisita">/visit <a name="commands_waypoint_CommandVisit"></a></a>
+      <ul>
+        <li><a href="#usages-5">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#waypoints-a-namecommands_waypoint_commandwaypointsa">/waypoints <a name="commands_waypoint_CommandWaypoints"></a></a>
+      <ul>
+        <li><a href="#usages-6">Usages</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -263,20 +273,21 @@
 	</header>    
 	<h1 id="table-of-contents">Table of Contents</h1>
 <ul>
-<li><a href="#net_forthecrown_commands_waypoint_CommandCreateWaypoint">createwaypoint</a></li>
-<li><a href="#net_forthecrown_commands_waypoint_CommandListWaypoints">listwaypoints</a></li>
-<li><a href="#net_forthecrown_commands_waypoint_CommandInvite">invite</a></li>
-<li><a href="#net_forthecrown_commands_waypoint_CommandHomeWaypoint">homewaypoint</a></li>
-<li><a href="#net_forthecrown_commands_waypoint_CommandWaypoints">waypoints</a></li>
-<li><a href="#net_forthecrown_commands_waypoint_CommandMoveIn">movein</a></li>
-<li><a href="#net_forthecrown_commands_waypoint_CommandVisit">visit</a></li>
+<li><a href="#commands_waypoint_CommandCreateWaypoint">/createwaypoint</a></li>
+<li><a href="#commands_waypoint_CommandHomeWaypoint">/homewaypoint</a></li>
+<li><a href="#commands_waypoint_CommandInvite">/invite</a></li>
+<li><a href="#commands_waypoint_CommandListWaypoints">/listwaypoints</a></li>
+<li><a href="#commands_waypoint_CommandMoveIn">/movein</a></li>
+<li><a href="#commands_waypoint_CommandVisit">/visit</a></li>
+<li><a href="#commands_waypoint_CommandWaypoints">/waypoints</a></li>
 </ul>
 <h1 id="commands">Commands</h1>
-<h1 id="createwaypoint-a-namenet_forthecrown_commands_waypoint_commandcreatewaypointa">/createwaypoint <a name="net_forthecrown_commands_waypoint_CommandCreateWaypoint"></a></h1>
+<h2 id="createwaypoint-a-namecommands_waypoint_commandcreatewaypointa">/createwaypoint <a name="commands_waypoint_CommandCreateWaypoint"></a></h2>
 <p>Creates a new waypoint</p>
-<p>Permission: <code>ftc.waypoints.admin</code><br>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints.admin</code><br>
 Aliases: <code>waypointcreate</code></p>
-<h2 id="usages">Usages</h2>
+<h3 id="usages">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/createwaypoint</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Creates a new waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
@@ -291,33 +302,53 @@ Aliases: <code>waypointcreate</code></p>
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/createwaypoint -region_pole</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Creates a region pole waypoint from the block</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># you&#39;re looking at</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="listwaypoints-a-namenet_forthecrown_commands_waypoint_commandlistwaypointsa">/listwaypoints <a name="net_forthecrown_commands_waypoint_CommandListWaypoints"></a></h1>
+</span></span></span></code></pre></div><h2 id="homewaypoint-a-namecommands_waypoint_commandhomewaypointa">/homewaypoint <a name="commands_waypoint_CommandHomeWaypoint"></a></h2>
+<p>Takes you to your home waypoint</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints</code><br>
+Aliases: <code>homepole</code>, <code>homepost</code></p>
+<h3 id="usages-1">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/homewaypoint</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Takes you to your home waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="invite-a-namecommands_waypoint_commandinvitea">/invite <a name="commands_waypoint_CommandInvite"></a></h2>
+<p>Invites users to your waypoint</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints</code></p>
+<h3 id="usages-2">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/invite &lt;users&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Invites users to your waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="listwaypoints-a-namecommands_waypoint_commandlistwaypointsa">/listwaypoints <a name="commands_waypoint_CommandListWaypoints"></a></h2>
 <p>Lists named waypoints</p>
-<p>Permission: <code>ftc.waypoints</code><br>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints</code><br>
 Aliases: <code>listregions</code>, <code>regions</code>, <code>regionlist</code>, <code>waypointlist</code></p>
-<h2 id="usages-1">Usages</h2>
+<h3 id="usages-3">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/listwaypoints</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Lists named waypoints</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#204a87;font-weight:bold">/listwaypoints &lt;page: number(1..)&gt; [&lt;page size</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">number(5..20)&gt;]</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Lists named waypoints on a specific &lt;page&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="invite-a-namenet_forthecrown_commands_waypoint_commandinvitea">/invite <a name="net_forthecrown_commands_waypoint_CommandInvite"></a></h1>
-<p>Invites users to your waypoint</p>
-<p>Permission: <code>ftc.waypoints</code></p>
-<h2 id="usages-2">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/invite &lt;users&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Invites users to your waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="homewaypoint-a-namenet_forthecrown_commands_waypoint_commandhomewaypointa">/homewaypoint <a name="net_forthecrown_commands_waypoint_CommandHomeWaypoint"></a></h1>
-<p>Takes you to your home waypoint</p>
-<p>Permission: <code>ftc.waypoints</code><br>
-Aliases: <code>homepole</code>, <code>homepost</code></p>
-<h2 id="usages-3">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/homewaypoint</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Takes you to your home waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="waypoints-a-namenet_forthecrown_commands_waypoint_commandwaypointsa">/waypoints <a name="net_forthecrown_commands_waypoint_CommandWaypoints"></a></h1>
+</span></span></span></code></pre></div><h2 id="movein-a-namecommands_waypoint_commandmoveina">/movein <a name="commands_waypoint_CommandMoveIn"></a></h2>
+<p>Sets your home waypoint</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints</code><br>
+Aliases: <code>sethomepole</code>, <code>sethomepost</code></p>
+<h3 id="usages-4">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/movein</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Sets your home waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="visit-a-namecommands_waypoint_commandvisita">/visit <a name="commands_waypoint_CommandVisit"></a></h2>
+<p>Visits a teleport waypoint</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints</code><br>
+Aliases: <code>v</code>, <code>vr</code>, <code>visitregion</code></p>
+<h3 id="usages-5">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/visit &lt;waypoint name&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Visits a teleport &lt;waypoint&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="waypoints-a-namecommands_waypoint_commandwaypointsa">/waypoints <a name="commands_waypoint_CommandWaypoints"></a></h2>
 <p>An FTC command (default description)</p>
-<p>Permission: <code>ftc.waypoints.admin</code></p>
-<h2 id="usages-4">Usages</h2>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.waypoints.admin</code></p>
+<h3 id="usages-6">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">/waypoints &lt;waypoint&gt; move [&lt;pos</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">x, y, z&gt;]</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Moves a waypoint. If [pos] is not set, then</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># the waypoint is moved to where you&#39;re standing</span><span style="color:#f8f8f8;text-decoration:underline">
@@ -336,30 +367,16 @@ Aliases: <code>homepole</code>, <code>homepost</code></p>
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/waypoints &lt;waypoint&gt; property &lt;property name&gt; -clear</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Clears the &lt;property name&gt;&#39;s value</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="movein-a-namenet_forthecrown_commands_waypoint_commandmoveina">/movein <a name="net_forthecrown_commands_waypoint_CommandMoveIn"></a></h1>
-<p>Sets your home waypoint</p>
-<p>Permission: <code>ftc.waypoints</code><br>
-Aliases: <code>sethomepole</code>, <code>sethomepost</code></p>
-<h2 id="usages-5">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/movein</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Sets your home waypoint</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="visit-a-namenet_forthecrown_commands_waypoint_commandvisita">/visit <a name="net_forthecrown_commands_waypoint_CommandVisit"></a></h1>
-<p>Visits a teleport waypoint</p>
-<p>Permission: <code>ftc.waypoints</code><br>
-Aliases: <code>v</code>, <code>vr</code>, <code>visitregion</code></p>
-<h2 id="usages-6">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/visit &lt;waypoint name&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Visits a teleport &lt;waypoint&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h1 id="metadata">Metadata</h1>
 <p>This is an auto-generated command documentation file generated by the FTC plugin.<br>
-Date: <code>Tue Mar 21 15:10:51 EET 2023</code><br>
-Plugin version: <code>1.19.4-1719-SNAPSHOT</code><br>
+Date: <code>Thu Mar 30 22:08:46 CEST 2023</code><br>
+Plugin version: <code>1.19.4-1733-RELEASE</code><br>
 Total commands: 7</p>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 21, 2023: <a href="https://github.com/ForTheCrown/Website/commit/7bfe88a0ff2befa57e4c880f7743cb51bb828db5">Add command documentation files (7bfe88a)</a>
+  Last modified March 30, 2023: <a href="https://github.com/ForTheCrown/Website/commit/c05f872af80a1445faaa5df5de55bde36ee2f456">Update command pages (c05f872)</a>
 </div>
 
 </div>

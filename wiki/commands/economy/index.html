@@ -27,12 +27,12 @@
 <meta property="og:type" content="article" />
 <meta property="og:url" content="/wiki/commands/economy/" /><meta property="article:section" content="wiki" />
 
-<meta property="article:modified_time" content="2023-03-21T15:12:37+02:00" /><meta property="og:site_name" content="For The Crown" />
+<meta property="article:modified_time" content="2023-03-30T23:37:48+03:00" /><meta property="og:site_name" content="For The Crown" />
 <meta itemprop="name" content="Economy">
 <meta itemprop="description" content="Economy Commands
 ">
-<meta itemprop="dateModified" content="2023-03-21T15:12:37+02:00" />
-<meta itemprop="wordCount" content="377">
+<meta itemprop="dateModified" content="2023-03-30T23:37:48+03:00" />
+<meta itemprop="wordCount" content="393">
 <meta itemprop="keywords" content="" /><meta name="twitter:card" content="summary"/>
 <meta name="twitter:title" content="Economy"/>
 <meta name="twitter:description" content="Economy Commands
@@ -165,31 +165,42 @@
             <div class="td-toc">
         <nav id="TableOfContents">
   <ul>
-    <li><a href="#usages">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-1">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-2">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-3">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-4">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-5">Usages</a></li>
-  </ul>
-
-  <ul>
-    <li><a href="#usages-6">Usages</a></li>
+    <li><a href="#becomebaron-a-namecommands_economy_commandbecomebarona">/becomebaron <a name="commands_economy_CommandBecomeBaron"></a></a>
+      <ul>
+        <li><a href="#usages">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#deposit-a-namecommands_economy_commanddeposita">/deposit <a name="commands_economy_CommandDeposit"></a></a>
+      <ul>
+        <li><a href="#usages-1">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#editshop-a-namecommands_economy_commandeditshopa">/editshop <a name="commands_economy_CommandEditShop"></a></a>
+      <ul>
+        <li><a href="#usages-2">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#pay-a-namecommands_economy_commandpaya">/pay <a name="commands_economy_CommandPay"></a></a>
+      <ul>
+        <li><a href="#usages-3">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#sell-a-namecommands_economy_commandsella">/sell <a name="commands_economy_CommandSell"></a></a>
+      <ul>
+        <li><a href="#usages-4">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#shop-a-namecommands_economy_commandshopa">/shop <a name="commands_economy_CommandShop"></a></a></li>
+    <li><a href="#shophistory-a-namecommands_economy_commandshophistorya">/shophistory <a name="commands_economy_CommandShopHistory"></a></a>
+      <ul>
+        <li><a href="#usages-5">Usages</a></li>
+      </ul>
+    </li>
+    <li><a href="#withdraw-a-namecommands_economy_commandwithdrawa">/withdraw <a name="commands_economy_CommandWithdraw"></a></a>
+      <ul>
+        <li><a href="#usages-6">Usages</a></li>
+      </ul>
+    </li>
   </ul>
 </nav>
       </div>
@@ -263,67 +274,39 @@
 	</header>    
 	<h1 id="table-of-contents">Table of Contents</h1>
 <ul>
-<li><a href="#net_forthecrown_commands_economy_CommandDeposit">deposit</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandBecomeBaron">becomebaron</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandPay">pay</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandShop">shop</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandShopHistory">shophistory</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandWithdraw">withdraw</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandSell">sell</a></li>
-<li><a href="#net_forthecrown_commands_economy_CommandEditShop">editshop</a></li>
+<li><a href="#commands_economy_CommandBecomeBaron">/becomebaron</a></li>
+<li><a href="#commands_economy_CommandDeposit">/deposit</a></li>
+<li><a href="#commands_economy_CommandEditShop">/editshop</a></li>
+<li><a href="#commands_economy_CommandPay">/pay</a></li>
+<li><a href="#commands_economy_CommandSell">/sell</a></li>
+<li><a href="#commands_economy_CommandShop">/shop</a></li>
+<li><a href="#commands_economy_CommandShopHistory">/shophistory</a></li>
+<li><a href="#commands_economy_CommandWithdraw">/withdraw</a></li>
 </ul>
 <h1 id="commands">Commands</h1>
-<h1 id="deposit-a-namenet_forthecrown_commands_economy_commanddeposita">/deposit <a name="net_forthecrown_commands_economy_CommandDeposit"></a></h1>
+<h2 id="becomebaron-a-namecommands_economy_commandbecomebarona">/becomebaron <a name="commands_economy_CommandBecomeBaron"></a></h2>
+<p>Allows you to become a baron</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.becomebaron</code></p>
+<h3 id="usages">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/becomebaron</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Allows you to become a baron</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="deposit-a-namecommands_economy_commanddeposita">/deposit <a name="commands_economy_CommandDeposit"></a></h2>
 <p>Allows you to deposit coins into your balance</p>
-<p>Permission: <code>ftc.commands.deposit</code></p>
-<h2 id="usages">Usages</h2>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.deposit</code></p>
+<h3 id="usages-1">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/deposit</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Deposits all held coins</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/deposit all</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Deposits all coins in your inventory</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="becomebaron-a-namenet_forthecrown_commands_economy_commandbecomebarona">/becomebaron <a name="net_forthecrown_commands_economy_CommandBecomeBaron"></a></h1>
-<p>Allows you to become a baron</p>
-<p>Permission: <code>ftc.commands.becomebaron</code></p>
-<h2 id="usages-1">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/becomebaron</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Allows you to become a baron</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="pay-a-namenet_forthecrown_commands_economy_commandpaya">/pay <a name="net_forthecrown_commands_economy_CommandPay"></a></h1>
-<p>Pay another player</p>
-<p>Permission: <code>ftc.commands.pay</code></p>
-<h2 id="usages-2">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">/pay &lt;players&gt; &lt;amount</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">number(1..)&gt; [&lt;message&gt;]</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Pays all &lt;players&gt; an &lt;amount&gt; of rhines [message] specifies</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># an optional message to send to players being paid.</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="shop-a-namenet_forthecrown_commands_economy_commandshopa">/shop <a name="net_forthecrown_commands_economy_CommandShop"></a></h1>
-<p>Opens the shop menu</p>
-<p>Permission: <code>ftc.commands.shop</code></p>
-<h1 id="shophistory-a-namenet_forthecrown_commands_economy_commandshophistorya">/shophistory <a name="net_forthecrown_commands_economy_CommandShopHistory"></a></h1>
-<p>Shows the history of the shop you&rsquo;re looking at</p>
-<p>Permission: <code>ftc.commands.shophistory</code></p>
-<h2 id="usages-3">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/shophistory</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Shows the history of the shop you&#39;re looking at</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="withdraw-a-namenet_forthecrown_commands_economy_commandwithdrawa">/withdraw <a name="net_forthecrown_commands_economy_CommandWithdraw"></a></h1>
-<p>Get cold coins from your balance</p>
-<p>Permission: <code>ftc.commands.withdraw</code></p>
-<h2 id="usages-4">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/withdraw &lt;amount&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Withdraws a coin worth &lt;amount&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/withdraw &lt;amount&gt; &lt;coins&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Withdraws &lt;coins&gt;, each worth &lt;amount&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="sell-a-namenet_forthecrown_commands_economy_commandsella">/sell <a name="net_forthecrown_commands_economy_CommandSell"></a></h1>
-<p>Sells an item your holding</p>
-<p>Permission: <code>ftc.commands.sell</code></p>
-<h2 id="usages-5">Usages</h2>
-<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/sell</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Sells an item your holding</span><span style="color:#f8f8f8;text-decoration:underline">
-</span></span></span></code></pre></div><h1 id="editshop-a-namenet_forthecrown_commands_economy_commandeditshopa">/editshop <a name="net_forthecrown_commands_economy_CommandEditShop"></a></h1>
+</span></span></span></code></pre></div><h2 id="editshop-a-namecommands_economy_commandeditshopa">/editshop <a name="commands_economy_CommandEditShop"></a></h2>
 <p>Allows you to edit a shop</p>
-<p>Permission: <code>ftc.commands.shopedit</code><br>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.shopedit</code><br>
 Aliases: <code>shopedit</code>, <code>signshop</code></p>
-<h2 id="usages-6">Usages</h2>
+<h3 id="usages-2">Usages</h3>
 <div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/editshop</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Displays help information</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
@@ -365,16 +348,52 @@ Aliases: <code>shopedit</code>, <code>signshop</code></p>
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/editshop data set &lt;tag&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Completely overwrites the existing Shop data</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># and sets it to &lt;tag&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="pay-a-namecommands_economy_commandpaya">/pay <a name="commands_economy_CommandPay"></a></h2>
+<p>Pay another player</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.pay</code></p>
+<h3 id="usages-3">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#204a87;font-weight:bold">/pay &lt;players&gt; &lt;amount</span><span style="color:#000;font-weight:bold">:</span><span style="color:#f8f8f8;text-decoration:underline"> </span><span style="color:#000">number(1..)&gt; [&lt;message&gt;]</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Pays all &lt;players&gt; an &lt;amount&gt; of rhines [message] specifies</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># an optional message to send to players being paid.</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="sell-a-namecommands_economy_commandsella">/sell <a name="commands_economy_CommandSell"></a></h2>
+<p>Sells an item your holding</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.sell</code></p>
+<h3 id="usages-4">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/sell</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Sells an item your holding</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="shop-a-namecommands_economy_commandshopa">/shop <a name="commands_economy_CommandShop"></a></h2>
+<p>Opens the shop menu</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.shop</code></p>
+<h2 id="shophistory-a-namecommands_economy_commandshophistorya">/shophistory <a name="commands_economy_CommandShopHistory"></a></h2>
+<p>Shows the history of the shop you&rsquo;re looking at</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.shophistory</code></p>
+<h3 id="usages-5">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/shophistory</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Shows the history of the shop you&#39;re looking at</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span></code></pre></div><h2 id="withdraw-a-namecommands_economy_commandwithdrawa">/withdraw <a name="commands_economy_CommandWithdraw"></a></h2>
+<p>Get cold coins from your balance</p>
+<p><strong>Command metadata</strong>:<br>
+Permission: <code>ftc.commands.withdraw</code></p>
+<h3 id="usages-6">Usages</h3>
+<div class="highlight"><pre tabindex="0" style="background-color:#f8f8f8;-moz-tab-size:4;-o-tab-size:4;tab-size:4;"><code class="language-yaml" data-lang="yaml"><span style="display:flex;"><span><span style="color:#000">/withdraw &lt;amount&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Withdraws a coin worth &lt;amount&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#000">/withdraw &lt;amount&gt; &lt;coins&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
+</span></span></span><span style="display:flex;"><span><span style="color:#f8f8f8;text-decoration:underline"></span><span style="color:#8f5902;font-style:italic"># Withdraws &lt;coins&gt;, each worth &lt;amount&gt;</span><span style="color:#f8f8f8;text-decoration:underline">
 </span></span></span></code></pre></div><h1 id="metadata">Metadata</h1>
 <p>This is an auto-generated command documentation file generated by the FTC plugin.<br>
-Date: <code>Tue Mar 21 15:10:51 EET 2023</code><br>
-Plugin version: <code>1.19.4-1719-SNAPSHOT</code><br>
+Date: <code>Thu Mar 30 22:08:46 CEST 2023</code><br>
+Plugin version: <code>1.19.4-1733-RELEASE</code><br>
 Total commands: 8</p>
 
 	
 	
 	<div class="text-muted mt-5 pt-3 border-top">
-  Last modified March 21, 2023: <a href="https://github.com/ForTheCrown/Website/commit/7bfe88a0ff2befa57e4c880f7743cb51bb828db5">Add command documentation files (7bfe88a)</a>
+  Last modified March 30, 2023: <a href="https://github.com/ForTheCrown/Website/commit/c05f872af80a1445faaa5df5de55bde36ee2f456">Update command pages (c05f872)</a>
 </div>
 
 </div>

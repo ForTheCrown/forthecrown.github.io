@@ -17,6 +17,9 @@
     <loc>/wiki/commands/guild/</loc>
     <lastmod>2023-03-30T23:37:48+03:00</lastmod>
   </url><url>
+    <loc>/wiki/guilds/hazelguard/</loc>
+    <lastmod>2023-04-11T19:09:47+02:00</lastmod>
+  </url><url>
     <loc>/wiki/commands/help/</loc>
     <lastmod>2023-03-30T23:37:48+03:00</lastmod>
   </url><url>
@@ -31,9 +34,6 @@
   </url><url>
     <loc>/wiki/commands/marriage/</loc>
     <lastmod>2023-03-30T23:37:48+03:00</lastmod>
-  </url><url>
-    <loc>/wiki/guilds/menus/</loc>
-    <lastmod>2023-03-31T18:04:21+02:00</lastmod>
   </url><url>
     <loc>/wiki/commands/punish/</loc>
     <lastmod>2023-03-30T23:37:48+03:00</lastmod>
@@ -73,6 +73,9 @@
   </url><url>
     <loc>/docs/scripts/java/</loc>
     <lastmod>2023-03-19T13:18:47+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/guilds/menus/</loc>
+    <lastmod>2023-04-11T19:09:47+02:00</lastmod>
   </url><url>
     <loc>/docs/interactables/scripting/</loc>
     <lastmod>2023-02-11T13:50:26+01:00</lastmod>

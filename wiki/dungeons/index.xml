@@ -13,5 +13,263 @@
       
     
     
+    <item>
+      <title>Wiki: Level 1</title>
+      <link>/wiki/dungeons/level_1/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/dungeons/level_1/</guid>
+      <description>
+        
+        
+        &lt;p&gt;All the mobs are in the zombie family. The boss at the end is called &lt;em&gt;Zhambie&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;recommended-gear&#34;&gt;Recommended Gear&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Smite V is highly recommended, whether on an axe or sword.&lt;/li&gt;
+&lt;li&gt;Diamond armour with protection enchantments.&lt;/li&gt;
+&lt;li&gt;A shield may be useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;p&gt;Any player can enter this level.&lt;/p&gt;
+&lt;h4 id=&#34;spawning-zhambie&#34;&gt;Spawning Zhambie&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Item&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;Amount&lt;/th&gt;
+&lt;th&gt;Origin&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Dried Kelp&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;Husks&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Golden Nuggets&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;Baby Zombies&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Knight&amp;rsquo;s Flesh&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;Knight Zombies&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Gold Ingot&lt;/td&gt;
+&lt;td&gt;1&lt;/td&gt;
+&lt;td&gt;&lt;div style=&#34;max-width:300px&#34;&gt;Secret room, accessed via a stone button in the Parkour with Mummies.&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;zhambie-behaviour&#34;&gt;Zhambie Behaviour&lt;/h2&gt;
+&lt;p&gt;Zhambie will chase the player around the room. &lt;br&gt;
+He is immune to arrows and knockback, and summons other husks as long as he is alive.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;level-layout&#34;&gt;Level Layout&lt;/h3&gt;
+&lt;div class=&#34;screenshot&#34;&gt;&lt;img src=&#34;/images/dungeons/layout_level1.png&#34; alt=&#34;Level 1 layout&#34;&gt;&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Wiki: Level 2</title>
+      <link>/wiki/dungeons/level_2/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/dungeons/level_2/</guid>
+      <description>
+        
+        
+        &lt;p&gt;All the mobs are in the skeleton family. The boss at the end is called &lt;em&gt;Skalatan&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;recommended-gear&#34;&gt;Recommended Gear&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Smite V is highly recommended, whether on an axe or sword.&lt;/li&gt;
+&lt;li&gt;Diamond armour with protection enchantments.&lt;/li&gt;
+&lt;li&gt;A shield may be useful.&lt;/li&gt;
+&lt;li&gt;A bow may be userful too.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;h4 id=&#34;entering&#34;&gt;Entering&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Advancement&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Defeat Dungeon Level 1&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;spawning-skalatan&#34;&gt;Spawning Skalatan&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Item&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;Amount&lt;/th&gt;
+&lt;th&gt;Origin&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Stray Bones&lt;/td&gt;
+&lt;td&gt;15&lt;/td&gt;
+&lt;td&gt;Strays&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Wither Goo&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;&lt;div style=&#34;max-width:300px&#34;&gt;Potentially drops when you punch &lt;br&gt; &lt;em&gt;Josh&lt;/em&gt; the wither skeleton. &lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Horse Bones&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;Skeleton Horses&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Floaty Bones&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;Floaty Skeletons&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;skalatan-behaviour&#34;&gt;Skalatan Behaviour&lt;/h2&gt;
+&lt;p&gt;Skalatan will switch between attacking with a sword and a bow every few seconds. It gives the wither effect when attacking you with melee, and uses a flame bow. &lt;br&gt;
+&lt;br&gt;
+Skalatan can only be damaged by the player with the item type it is holding. This means when Skalatan is holding a bow, it is invulnerable to melee attacks from the player, but can be damaged with arrows. When it is holding a sword, Skalatan can only be damaged by melee attacks from the player.
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;level-layout&#34;&gt;Level Layout&lt;/h3&gt;
+&lt;div class=&#34;screenshot&#34;&gt;&lt;img src=&#34;/images/dungeons/layout_level2.png&#34; alt=&#34;Level 2 layout&#34;&gt;&lt;/div&gt;
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Wiki: Level 3</title>
+      <link>/wiki/dungeons/level_3/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/dungeons/level_3/</guid>
+      <description>
+        
+        
+        &lt;p&gt;All the mobs are in the spider family. The boss at the end is called &lt;em&gt;Hidey Spidey&lt;/em&gt;.&lt;/p&gt;
+&lt;h2 id=&#34;recommended-gear&#34;&gt;Recommended Gear&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Bane of Arthropods V is highly recommended.&lt;/li&gt;
+&lt;li&gt;Diamond armour with protection enchantments.&lt;/li&gt;
+&lt;li&gt;A bow is highly recommended.&lt;/li&gt;
+&lt;li&gt;A shield may be useful.&lt;/li&gt;
+&lt;li&gt;Potions of strength/regeneration may be useful.&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;requirements&#34;&gt;Requirements&lt;/h2&gt;
+&lt;h4 id=&#34;entering&#34;&gt;Entering&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Advancement&lt;/div&gt;&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Defeat Dungeon Level 2&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h4 id=&#34;spawning-hidey-spidey&#34;&gt;Spawning Hidey Spidey&lt;/h4&gt;
+&lt;table&gt;
+&lt;thead&gt;
+&lt;tr&gt;
+&lt;th&gt;&lt;div style=&#34;width:150px&#34;&gt;Item&lt;/div&gt;&lt;/th&gt;
+&lt;th&gt;Amount&lt;/th&gt;
+&lt;th&gt;Origin&lt;/th&gt;
+&lt;/tr&gt;
+&lt;/thead&gt;
+&lt;tbody&gt;
+&lt;tr&gt;
+&lt;td&gt;Spider Eyes&lt;/td&gt;
+&lt;td&gt;45&lt;/td&gt;
+&lt;td&gt;Spiders&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;String&lt;/td&gt;
+&lt;td&gt;30&lt;/td&gt;
+&lt;td&gt;Cave Spiders&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Fermented Spider Eyes&lt;/td&gt;
+&lt;td&gt;20&lt;/td&gt;
+&lt;td&gt;Mommy Spiders&lt;/td&gt;
+&lt;/tr&gt;
+&lt;tr&gt;
+&lt;td&gt;Arrows of Poison&lt;/td&gt;
+&lt;td&gt;5&lt;/td&gt;
+&lt;td&gt;&lt;div style=&#34;max-width:300px&#34;&gt;Somewhere in the caves in this level you will find &lt;em&gt;Greg&lt;/em&gt;, a special villager, who will sell you the arrows in exchange for spider eyes and string (dungeon items).&lt;/div&gt;&lt;/td&gt;
+&lt;/tr&gt;
+&lt;/tbody&gt;
+&lt;/table&gt;
+&lt;h2 id=&#34;hidey-spider-behaviour&#34;&gt;Hidey Spider Behaviour&lt;/h2&gt;
+&lt;p&gt;Hidey Spidey is invisible, and deals poison damage on contact. &lt;br&gt;
+&lt;br&gt;
+Hidey Spidey also summons cave spiders. Beware the cobwebs in the arena - you don&amp;rsquo;t want to get stuck in them!
+&lt;br&gt;
+&lt;br&gt;
+&lt;br&gt;&lt;/p&gt;
+&lt;hr&gt;
+&lt;h3 id=&#34;level-layout&#34;&gt;Level Layout&lt;/h3&gt;
+&lt;p&gt;Don&amp;rsquo;t fall in the water, in this level it is poisonous!&lt;/p&gt;
+&lt;div class=&#34;screenshot&#34;&gt;&lt;img src=&#34;/images/dungeons/layout_level3.png&#34; alt=&#34;Level 3 layout&#34;&gt;&lt;/div&gt;
+      </description>
+    </item>
+    
+    <item>
+      <title>Wiki: Level 4</title>
+      <link>/wiki/dungeons/level_4/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/dungeons/level_4/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This page is still a work in progress.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
+    <item>
+      <title>Wiki: Level 5</title>
+      <link>/wiki/dungeons/level_5/</link>
+      <pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate>
+      
+      <guid>/wiki/dungeons/level_5/</guid>
+      <description>
+        
+        
+        
+
+&lt;div class=&#34;pageinfo pageinfo-primary&#34;&gt;
+&lt;p&gt;This page is still a work in progress.&lt;/p&gt;
+
+&lt;/div&gt;
+
+
+      </description>
+    </item>
+    
   </channel>
 </rss>

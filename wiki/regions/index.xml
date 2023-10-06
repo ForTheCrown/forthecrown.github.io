@@ -1,11 +1,12 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>For The Crown – Region Poles</title>
-    <link>/wiki/regions/</link>
+    <link>d:/GitHubRepos/Website/public/wiki/regions/</link>
     <description>Recent content in Region Poles on For The Crown</description>
     <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
     
-	  <atom:link href="/wiki/regions/index.xml" rel="self" type="application/rss+xml" />
+	  <atom:link href="d:/GitHubRepos/Website/public/wiki/regions/index.xml" rel="self" type="application/rss+xml" />
     
     
       

@@ -1,0 +1,35 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>For The Crown – Blog</title>
+    <link>/blog/</link>
+    <description>Recent content in Blog on For The Crown</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en</language>
+    <lastBuildDate>Thu, 21 Sep 2023 17:25:28 +0000</lastBuildDate>
+    
+	  <atom:link href="/blog/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+      
+        
+      
+    
+    
+    <item>
+      <title>Blog: The FTC Blog</title>
+      <link>/blog/2023/09/21/the-ftc-blog/</link>
+      <pubDate>Thu, 21 Sep 2023 17:25:28 +0000</pubDate>
+      
+      <guid>/blog/2023/09/21/the-ftc-blog/</guid>
+      <description>
+        
+        
+        &lt;p&gt;FTC now has a blog!&lt;/p&gt;
+&lt;p&gt;This blog will be used to post devlogs, patchnotes and general information about
+the direction the server will be going in.&lt;/p&gt;
+
+      </description>
+    </item>
+    
+  </channel>
+</rss>

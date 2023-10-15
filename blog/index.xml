@@ -58,6 +58,11 @@ It has been ambiguous and hard to understand, but we&amp;rsquo;ve tried making i
 &lt;li&gt;Removed a staircase in the spawn area to lead new players down the correct path.&lt;/li&gt;
 &lt;li&gt;Re-added the purple glass path that leads to the End portal in Hazelguard&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h3 id=&#34;known-issues-will-be-fixed-in-the-next-couple-days&#34;&gt;Known Issues (Will be fixed in the next couple days)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hulk smashing never triggers, Instant TP is always used&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Right-Click to edit waypoint&amp;rdquo; sign is not rendering correctly for non-waypoint-owners&lt;/li&gt;
+&lt;/ul&gt;
 
       </description>
     </item>

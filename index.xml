@@ -14,6 +14,59 @@
     
     
     <item>
+      <title>Blog: Patch Notes</title>
+      <link>/blog/2023/10/15/patch-notes/</link>
+      <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/10/15/patch-notes/</guid>
+      <description>
+        
+        
+        &lt;img src=&#34;/images/blog/oct14-2023-header.png&#34; alt=&#34;Waypoint Screenshot&#34; style=&#34;display:flex; width:85%;&#34; class=&#34;screenshot&#34;&gt;
+&lt;h1 id=&#34;hello-everyone&#34;&gt;Hello everyone!&lt;/h1&gt;
+&lt;p&gt;In the future, whenever we have a significant update with a lot of information, we&amp;rsquo;ll share it via a dedicated post on the FTC Blog instead of overwhelming the &lt;em&gt;#updates&lt;/em&gt; channel on Discord.&lt;/p&gt;
+&lt;h2 id=&#34;minecraft-update&#34;&gt;Minecraft update&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;The server is now on version 1.20.2&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;form-changes&#34;&gt;Form Changes&lt;/h2&gt;
+&lt;p&gt;We recently put out a &lt;a href=&#34;https://forms.gle/mgwH7q1YB99C4btX9&#34;&gt; form&lt;/a&gt; where we requested you answer a few questions about the server. We have received a handful of responses and would like to thank those who have answered the form already.&lt;/p&gt;
+&lt;h4 id=&#34;shop-challenges&#34;&gt;&lt;code&gt;/shop&lt;/code&gt; Challenges&lt;/h4&gt;
+&lt;p&gt;Thanks to a few responses on the form, it was brought to our attention that the &lt;code&gt;/shop&lt;/code&gt; challenges have been too difficult, and time consuming to complete. In an effort to resolve this, we have removed a few hard-to-get heads, and we have also tweaked the drop rates of some other ones. The items and potions have also seen some re-arranging.&lt;/p&gt;
+&lt;h4 id=&#34;royal-sword-abilities&#34;&gt;Royal Sword Abilities&lt;/h4&gt;
+&lt;p&gt;We also heard your feedback on the Royal Sword Abilities; mainly on the application process, and we have made the requirements for each ability more approachable.&lt;/p&gt;
+&lt;ul&gt;
+&lt;li&gt;&lt;strong&gt;Ender Pearl&lt;/strong&gt; now only requires 10,000 Rhines and 32 ender pearls.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Twirl&lt;/strong&gt; has been renamed &lt;strong&gt;Whirlwind&lt;/strong&gt; and now only requires 10,000 Rhines and 8 compasses.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Dash&lt;/strong&gt; now only requires 10,000 Rhines and 3 Potions of Leaping II (1:30).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Far Reach&lt;/strong&gt; now only requires 10,000 Rhines and a Mending Fishing Rod.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;TNT&lt;/strong&gt; has been renamed &lt;strong&gt;Explosive Barrage&lt;/strong&gt; and now only requires 10,000 Rhines and 16 TNT.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Fire Ball&lt;/strong&gt; now only requires 10,000 Rhines and 12 Fire charges.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Regeneration&lt;/strong&gt; now only requires 10,000 Rhines and 3 Potions of Regeneration II (22s).&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Strength&lt;/strong&gt; now only requires 10,000 Rhines and a Diamond Sword.&lt;/li&gt;
+&lt;li&gt;&lt;strong&gt;Weakness&lt;/strong&gt; now only requires 10,000 Rhines and 3 Potions of Weakness (4m).&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h2 id=&#34;waypoint-update&#34;&gt;Waypoint Update&lt;/h2&gt;
+&lt;p&gt;The Waypoint plugin has received a lot of attention in this latest update.
+It has been ambiguous and hard to understand, but we&amp;rsquo;ve tried making it more user-friendly and easier to grasp.&lt;/p&gt;
+&lt;p&gt;For more information on the new Waypoint feature, check out the Waypoint entry on the FTC Wiki &lt;a href=&#34;https://www.forthecrown.net/wiki/waypoints/&#34;&gt; here!&lt;/a&gt;&lt;/p&gt;
+&lt;p&gt;Huge credit to JulieWoolie for making this update.&lt;/p&gt;
+&lt;h2 id=&#34;miscellaneous&#34;&gt;Miscellaneous&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;A few &amp;ldquo;Launch Pads&amp;rdquo; have been added throughout Hazelguard.&lt;/li&gt;
+&lt;li&gt;Removed a staircase in the spawn area to lead new players down the correct path.&lt;/li&gt;
+&lt;li&gt;Re-added the purple glass path that leads to the End portal in Hazelguard&lt;/li&gt;
+&lt;/ul&gt;
+&lt;h3 id=&#34;known-issues-will-be-fixed-in-the-next-couple-days&#34;&gt;Known Issues (Will be fixed in the next couple days)&lt;/h3&gt;
+&lt;ul&gt;
+&lt;li&gt;Hulk smashing never triggers, Instant TP is always used&lt;/li&gt;
+&lt;li&gt;&amp;ldquo;Right-Click to edit waypoint&amp;rdquo; sign is not rendering correctly for non-waypoint-owners&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: The FTC Blog</title>
       <link>/blog/2023/09/21/the-ftc-blog/</link>
       <pubDate>Thu, 21 Sep 2023 17:25:28 +0000</pubDate>

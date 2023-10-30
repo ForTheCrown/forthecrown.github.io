@@ -15,6 +15,52 @@
     
     
     <item>
+      <title>Blog: 🌍 Server Reset 🌍</title>
+      <link>/blog/2023/10/30/server-reset/</link>
+      <pubDate>Mon, 30 Oct 2023 00:00:00 +0000</pubDate>
+      
+      <guid>/blog/2023/10/30/server-reset/</guid>
+      <description>
+        
+        
+        &lt;h2 id=&#34;world-reset-coming-after-the-121-update&#34;&gt;World Reset Coming After the 1.21 Update!&lt;/h2&gt;
+&lt;p&gt;Greetings, Adventurers!&lt;/p&gt;
+&lt;p&gt;We hope you&amp;rsquo;re as thrilled as we are about the upcoming Minecraft 1.21 update, filled with exciting new features, blocks, and adventures. As we prepare to embark on this new journey, we have an important announcement to make: &lt;strong&gt;Our Minecraft Server will undergo a world reset following the release of the 1.21 update!&lt;/strong&gt;&lt;/p&gt;
+&lt;h3 id=&#34;when-is-the-reset&#34;&gt;When is the Reset?&lt;/h3&gt;
+&lt;p&gt;The world reset is scheduled to take place as soon as possible after the update (Mid 2024). We want to ensure that all players can dive into the new content together, on a level playing field.&lt;/p&gt;
+&lt;h3 id=&#34;why-are-we-resetting&#34;&gt;Why Are We Resetting?&lt;/h3&gt;
+&lt;ol&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Embrace the New:&lt;/strong&gt; With each update, Minecraft introduces amazing new features. A world reset allows us to take full advantage of these fresh opportunities and create an exciting new canvas for all players to explore.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Fair Play:&lt;/strong&gt; A reset ensures that everyone starts on equal footing. Whether you&amp;rsquo;re a senior citizen or a newbie, you&amp;rsquo;ll have the same chance to dominate the world with your creativity and ingenuity.&lt;/p&gt;
+&lt;/li&gt;
+&lt;li&gt;
+&lt;p&gt;&lt;strong&gt;Optimized Performance:&lt;/strong&gt; It is also an excellent opportunity to optimize the server&amp;rsquo;s performance, implement improvements, and squash any pesky bugs that might have cropped up.&lt;/p&gt;
+&lt;/li&gt;
+&lt;/ol&gt;
+&lt;h3 id=&#34;what-happens-to-the-current-world&#34;&gt;What Happens to the Current World?&lt;/h3&gt;
+&lt;p&gt;The current world will be archived, and you&amp;rsquo;ll have the chance to download your builds and creations for posterity. We value the countless hours and hard work you&amp;rsquo;ve put into this world, and we want to make sure those memories are preserved.&lt;/p&gt;
+&lt;h3 id=&#34;get-ready-for-the-reset&#34;&gt;Get Ready for the Reset!&lt;/h3&gt;
+&lt;p&gt;In the months leading up to the reset, you&amp;rsquo;ll be able to save your most valued items in a shulker we&amp;rsquo;ll return to you after the reset. And for all you senior citizens from the 1st map, you&amp;rsquo;ll be able to keep your first map&amp;rsquo;s shulker.&lt;/p&gt;
+&lt;p&gt;You&amp;rsquo;ll only be allowed to bring items of sentimental value, we&amp;rsquo;ll check each shulker, so don&amp;rsquo;t try to sneak anything past us :3&lt;/p&gt;
+&lt;p&gt;Thank you for being part of our Minecraft community. We can&amp;rsquo;t wait to see what incredible creations and adventures await in the new world. Get your pickaxes and shovels ready – a fresh, uncharted world awaits you after the 1.21 update!&lt;/p&gt;
+&lt;p&gt;Best regards,&lt;br&gt;
+ForTheCrown staff&lt;br&gt;
+The Minecraft Adventure Awaits! 🌟🪓⛏🌟&lt;/p&gt;
+&lt;h2 id=&#34;fixes&#34;&gt;Fixes&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;Fixed Waypoint edit signs not rendering correctly&lt;/li&gt;
+&lt;li&gt;Fixed hulk smash never triggering&lt;/li&gt;
+&lt;li&gt;Fixed guild effects not working&lt;/li&gt;
+&lt;li&gt;Fixed guild &amp;ldquo;Entering&amp;rdquo; and &amp;ldquo;Leaving&amp;rdquo; messages not working&lt;/li&gt;
+&lt;/ul&gt;
+
+      </description>
+    </item>
+    
+    <item>
       <title>Blog: Patch Notes</title>
       <link>/blog/2023/10/15/patch-notes/</link>
       <pubDate>Sun, 15 Oct 2023 00:00:00 +0000</pubDate>

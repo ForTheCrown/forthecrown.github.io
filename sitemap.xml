@@ -3,67 +3,115 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   <url>
     <loc>/wiki/commands/admin/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
-    <loc>/wiki/commands/economy/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/afk/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
-    <loc>/wiki/commands/emotes/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/antigrief/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/challenges/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/cosmetics/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/cosmetics-emotes/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/dialogues/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/discord/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/docs/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/dungeons/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/economy-market/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/economy-signshops/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/general/</loc>
   </url><url>
-    <loc>/wiki/commands/guild/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/guilds/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/guilds/hazelguard/</loc>
   </url><url>
-    <loc>/wiki/commands/help/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
-  </url><url>
     <loc>/wiki/commands/home/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/inventory/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/commands/item/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/king/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/leaderboards/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/dungeons/level_1/</loc>
   </url><url>
-    <loc>/wiki/commands/markets/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/mail/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
-    <loc>/wiki/commands/marriage/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
-  </url><url>
-    <loc>/wiki/commands/punish/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/marriages/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/docs/scripts/running/</loc>
     <lastmod>2023-02-11T13:50:26+01:00</lastmod>
   </url><url>
+    <loc>/wiki/commands/scripts/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/sellshop/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
     <loc>/wiki/server_team/</loc>
     <lastmod>2023-10-08T14:28:56+03:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/serverlist/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/settings/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/docs/challenges/setup/</loc>
     <lastmod>2023-02-11T13:50:26+01:00</lastmod>
   </url><url>
+    <loc>/wiki/commands/structure/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
+    <loc>/wiki/commands/titles/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
+  </url><url>
     <loc>/wiki/commands/tpa/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/commands/uncategorized/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/commands/usables/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/docs/interactables/setup/</loc>
     <lastmod>2023-02-11T13:50:26+01:00</lastmod>
   </url><url>
-    <loc>/wiki/commands/user/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/waypoints/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
-    <loc>/wiki/commands/waypoint/</loc>
-    <lastmod>2023-03-30T23:37:48+03:00</lastmod>
+    <loc>/wiki/commands/worldloader/</loc>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/wiki/bank/</loc>
     <lastmod>2023-10-08T14:28:56+03:00</lastmod>
@@ -153,7 +201,7 @@
     <lastmod>2023-10-08T14:28:56+03:00</lastmod>
   </url><url>
     <loc>/wiki/commands/</loc>
-    <lastmod>2023-10-08T14:28:56+03:00</lastmod>
+    <lastmod>2023-11-18T21:08:37+02:00</lastmod>
   </url><url>
     <loc>/docs/</loc>
     <lastmod>2023-02-11T13:50:26+01:00</lastmod>
